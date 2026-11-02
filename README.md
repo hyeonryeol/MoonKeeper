@@ -10,7 +10,7 @@
 |---|---|
 | 기획서 | [PPTX](docs/달지기_기획서.pptx), [PDF](docs/달지기_기획서.pdf) |
 | 1차 발표 | [PPTX](docs/달지기_1차_발표.pptx), [PDF](docs/달지기_1차_발표.pdf) |
-| 1차 발표 영상 | [YouTube 링크] |
+| 1차 발표 영상 | [YouTube](https://youtu.be/b0OzsJLzXDM) |
 
 ## 게임 개요
 
