@@ -2,6 +2,7 @@ from pico2d import *
 
 import game_world
 from earth import Earth
+from moon import Moon
 
 W, H = 800, 600
 
@@ -9,11 +10,13 @@ running = True
 
 
 def init():
-    global background, earth
+    global background, earth, moon
     game_world.clear()
     background = load_image('res/background.png')
     earth = Earth()
     game_world.add_object(earth, game_world.EARTH)
+    moon = Moon(earth)
+    game_world.add_object(moon, game_world.MOON)
 
 
 def handle_events():
