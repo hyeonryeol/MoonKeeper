@@ -1,0 +1,105 @@
+{
+ "frames": [
+  {
+   "filename": "bullet 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 8
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 8
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 8
+   },
+   "duration": 83
+  },
+  {
+   "filename": "bullet 1",
+   "frame": {
+    "x": 12,
+    "y": 0,
+    "w": 12,
+    "h": 8
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 8
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 8
+   },
+   "duration": 83
+  },
+  {
+   "filename": "bullet 2",
+   "frame": {
+    "x": 0,
+    "y": 8,
+    "w": 12,
+    "h": 8
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 8
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 8
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "bullet.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 24,
+   "h": 16
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "bullet",
+    "from": 0,
+    "to": 2,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/bullet",
+   "name": "Turret bullet",
+   "fps": 12,
+   "loop": true,
+   "frames": 3,
+   "frameSize": [
+    12,
+    8
+   ],
+   "pivot": [
+    9,
+    4
+   ],
+   "columns": 2
+  }
+ }
+}

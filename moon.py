@@ -2,6 +2,7 @@ import math
 
 from pico2d import SDL_KEYDOWN, SDL_KEYUP, SDLK_LEFT, SDLK_RIGHT, clamp
 
+from gear import Turret
 from sheet import get_sheet
 
 MIN_SPEED, MAX_SPEED = 80, 400
@@ -17,10 +18,13 @@ class Moon:
         self.theta = math.pi / 2
         self.radius = 15
         self.right = self.left = False
+        self.gears = []
         self.t = 0.0
         # 실제 궤도 반지름, 속도가 갑자기 바뀌어도 이 값은 천천히 따라감
         self.orbit = self.orbit_radius()
         self.place()
+        # 기본 포탑은 처음부터 달려 있음
+        self.gears.append(Turret(self, 'turret', 'gear-turret', 0))
 
     def orbit_radius(self):
         return 100 + (self.speed - 80) * 0.4
@@ -47,6 +51,10 @@ class Moon:
         # 각속도는 속도 나누기 반지름
         self.theta += self.speed / self.orbit * dt
         self.place()
+        for g in self.gears:
+            g.update(dt)
 
     def draw(self):
         self.sheet.draw(self.t, self.x, self.y)
+        for g in self.gears:
+            g.draw()
