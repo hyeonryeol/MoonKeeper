@@ -26,6 +26,8 @@ def handle_events():
             running = False
         elif event.type == SDL_KEYDOWN and event.key == SDLK_ESCAPE:
             running = False
+        else:
+            moon.handle_event(event)
 
 
 def update(dt):
