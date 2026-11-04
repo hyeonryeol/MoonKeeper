@@ -1,0 +1,61 @@
+{
+ "frames": [
+  {
+   "filename": "background 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 1000
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "background.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 400,
+   "h": 300
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "background",
+    "from": 0,
+    "to": 0,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/background",
+   "name": "Space background",
+   "fps": 1,
+   "loop": true,
+   "frames": 1,
+   "frameSize": [
+    400,
+    300
+   ],
+   "pivot": [
+    0,
+    0
+   ],
+   "columns": 1
+  }
+ }
+}
