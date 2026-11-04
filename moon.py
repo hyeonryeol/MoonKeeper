@@ -6,6 +6,7 @@ from sheet import get_sheet
 
 MIN_SPEED, MAX_SPEED = 80, 400
 FORCE = 200
+ORBIT_EASE = 5
 
 
 class Moon:
@@ -17,6 +18,7 @@ class Moon:
         self.radius = 15
         self.right = self.left = False
         self.t = 0.0
+        # 실제 궤도 반지름, 속도가 갑자기 바뀌어도 이 값은 천천히 따라감
         self.orbit = self.orbit_radius()
         self.place()
 
@@ -40,7 +42,8 @@ class Moon:
         # 오른쪽 가속 왼쪽 감속 손을 떼면 그 속도 유지
         push = (1 if self.right else 0) - (1 if self.left else 0)
         self.speed = clamp(MIN_SPEED, self.speed + push * FORCE * dt, MAX_SPEED)
-        self.orbit = self.orbit_radius()
+        # 목표 궤도 쪽으로 부드럽게 미끄러지듯 옮겨 감
+        self.orbit += (self.orbit_radius() - self.orbit) * min(1.0, ORBIT_EASE * dt)
         # 각속도는 속도 나누기 반지름
         self.theta += self.speed / self.orbit * dt
         self.place()
