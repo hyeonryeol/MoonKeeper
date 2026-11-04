@@ -1,6 +1,7 @@
 from pico2d import *
 
 import game_world
+from earth import Earth
 
 W, H = 800, 600
 
@@ -8,9 +9,11 @@ running = True
 
 
 def init():
-    global background
+    global background, earth
     game_world.clear()
     background = load_image('res/background.png')
+    earth = Earth()
+    game_world.add_object(earth, game_world.EARTH)
 
 
 def handle_events():
