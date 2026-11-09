@@ -14,6 +14,7 @@ class SmallAsteroid:
     max_hp = 1
     damage = 5
     fragments = 1
+    heavy = False
     sheet_name = 'asteroid-small'
 
     def __init__(self, earth, moon, on_collect, x, y):
@@ -21,6 +22,8 @@ class SmallAsteroid:
         self.sheet = get_sheet(self.sheet_name)
         self.x, self.y = x, y
         self.hp = self.max_hp
+        # 달과 같은 소행성이 매 프레임 계속 부딪히지 않게
+        self.ram_cool = 0.0
         self.t = random.uniform(0, 2)
 
     @classmethod
@@ -30,6 +33,7 @@ class SmallAsteroid:
 
     def update(self, dt):
         self.t += dt
+        self.ram_cool -= dt
         earth = self.earth
         dx, dy = earth.x - self.x, earth.y - self.y
         d = math.hypot(dx, dy)
@@ -63,6 +67,7 @@ class BigAsteroid(SmallAsteroid):
     max_hp = 4
     damage = 15
     fragments = 3
+    heavy = True
     sheet_name = 'asteroid-big'
 
     def destroy(self):

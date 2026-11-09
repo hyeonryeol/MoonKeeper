@@ -2,6 +2,7 @@ import math
 
 from pico2d import SDL_KEYDOWN, SDL_KEYUP, SDLK_LEFT, SDLK_RIGHT, clamp
 
+import game_world
 from gear import Turret
 from sheet import get_sheet
 
@@ -64,6 +65,16 @@ class Moon:
         self.x = self.earth.x + math.cos(self.theta) * self.orbit
         self.y = self.earth.y + math.sin(self.theta) * self.orbit
 
+    def ram(self, a):
+        a.ram_cool = 0.5
+        # 작은 소행성은 들이받으면 바로 부서짐
+        if not a.heavy:
+            a.destroy()
+            return
+        # 큰 소행성은 피해 1만 주고 달 속도가 절반으로 떨어짐
+        a.hit(1)
+        self.speed = max(MIN_SPEED, self.speed / 2)
+
     def update(self, dt):
         self.t += dt
         # 오른쪽 가속 왼쪽 감속 손을 떼면 그 속도 유지
@@ -74,6 +85,9 @@ class Moon:
         # 각속도는 속도 나누기 반지름
         self.theta += self.speed / self.orbit * dt
         self.place()
+        for a in game_world.objects_at(game_world.ENEMY)[:]:
+            if a.ram_cool <= 0 and game_world.collide(self, a):
+                self.ram(a)
         for g in self.gears:
             g.update(dt)
 
