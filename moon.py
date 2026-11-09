@@ -38,6 +38,12 @@ class Moon:
     def max_orbit_radius(self):
         return self.orbit_radius(MAX_SPEED)
 
+    def gear(self, key):
+        for g in self.gears:
+            if g.key == key:
+                return g
+        return None
+
     def handle_event(self, event):
         if event.type in (SDL_KEYDOWN, SDL_KEYUP):
             down = event.type == SDL_KEYDOWN

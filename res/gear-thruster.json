@@ -1,0 +1,171 @@
+{
+ "frames": [
+  {
+   "filename": "gear-thruster 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-thruster 1",
+   "frame": {
+    "x": 28,
+    "y": 0,
+    "w": 28,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-thruster 2",
+   "frame": {
+    "x": 0,
+    "y": 14,
+    "w": 28,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-thruster 3",
+   "frame": {
+    "x": 28,
+    "y": 14,
+    "w": 28,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-thruster 4",
+   "frame": {
+    "x": 0,
+    "y": 28,
+    "w": 28,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-thruster 5",
+   "frame": {
+    "x": 28,
+    "y": 28,
+    "w": 28,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 14
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "gear-thruster.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 56,
+   "h": 42
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "gear-thruster",
+    "from": 0,
+    "to": 5,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/gear-thruster",
+   "name": "Thruster",
+   "fps": 12,
+   "loop": true,
+   "frames": 6,
+   "frameSize": [
+    28,
+    14
+   ],
+   "pivot": [
+    2,
+    7
+   ],
+   "columns": 2
+  }
+ }
+}

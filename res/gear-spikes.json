@@ -1,0 +1,303 @@
+{
+ "frames": [
+  {
+   "filename": "gear-spikes 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 16
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-spikes 1",
+   "frame": {
+    "x": 12,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 16
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-spikes 2",
+   "frame": {
+    "x": 24,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 16
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-spikes 3",
+   "frame": {
+    "x": 36,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 16
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-spikes 4",
+   "frame": {
+    "x": 0,
+    "y": 16,
+    "w": 12,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 16
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-spikes 5",
+   "frame": {
+    "x": 12,
+    "y": 16,
+    "w": 12,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 16
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-spikes 6",
+   "frame": {
+    "x": 24,
+    "y": 16,
+    "w": 12,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 16
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-spikes 7",
+   "frame": {
+    "x": 36,
+    "y": 16,
+    "w": 12,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 16
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-spikes 8",
+   "frame": {
+    "x": 0,
+    "y": 32,
+    "w": 12,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 16
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-spikes 9",
+   "frame": {
+    "x": 12,
+    "y": 32,
+    "w": 12,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 16
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-spikes 10",
+   "frame": {
+    "x": 24,
+    "y": 32,
+    "w": 12,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 16
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-spikes 11",
+   "frame": {
+    "x": 36,
+    "y": 32,
+    "w": 12,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 12,
+    "h": 16
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "gear-spikes.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 48,
+   "h": 48
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "gear-spikes",
+    "from": 0,
+    "to": 11,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/gear-spikes",
+   "name": "Spike armour",
+   "fps": 12,
+   "loop": true,
+   "frames": 12,
+   "frameSize": [
+    12,
+    16
+   ],
+   "pivot": [
+    2,
+    8
+   ],
+   "columns": 4
+  }
+ }
+}
