@@ -5,7 +5,7 @@ from pico2d import *
 
 import augment
 import game_world
-from asteroid import SmallAsteroid
+from asteroid import SmallAsteroid, BigAsteroid
 from earth import Earth
 from moon import Moon
 from sheet import get_sheet
@@ -24,7 +24,7 @@ def need(level):
 
 
 def init():
-    global background, font, big_font, earth, moon, spawn_timer, level, xp, pending, clock, mode, cards
+    global background, font, big_font, earth, moon, spawn_timer, spawn_count, level, xp, pending, clock, mode, cards
     game_world.clear()
     background = load_image('res/background.png')
     # 갈무리 도트 글꼴, 작은 글자는 Galmuri14 15px 큰 글자는 Galmuri11 Bold
@@ -35,6 +35,7 @@ def init():
     moon = Moon(earth)
     game_world.add_object(moon, game_world.MOON)
     spawn_timer = 1.0
+    spawn_count = 0
     level, xp, pending = 1, 0, 0
     clock = 0.0
     mode = 'play'
@@ -93,11 +94,13 @@ def handle_events():
 
 
 def spawn(dt):
-    global spawn_timer
+    global spawn_timer, spawn_count
     spawn_timer -= dt
     if spawn_timer <= 0:
-        # 포탑 시험용으로 2초마다 화면 밖 아무 방향에서 하나씩
-        game_world.add_object(SmallAsteroid.at_edge(earth, moon, gain_xp, random.uniform(0, math.tau)), game_world.ENEMY)
+        # 시험용으로 2초마다 화면 밖 아무 방향에서 하나씩, 네 번째마다 큰 소행성
+        spawn_count += 1
+        kind = BigAsteroid if spawn_count % 4 == 0 else SmallAsteroid
+        game_world.add_object(kind.at_edge(earth, moon, gain_xp, random.uniform(0, math.tau)), game_world.ENEMY)
         spawn_timer = 2.0
 
 

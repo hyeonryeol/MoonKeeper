@@ -55,3 +55,21 @@ class SmallAsteroid:
 
     def draw(self):
         self.sheet.draw(self.t, self.x, self.y)
+
+
+class BigAsteroid(SmallAsteroid):
+    radius = 11
+    speed = 40
+    max_hp = 4
+    damage = 15
+    fragments = 3
+    sheet_name = 'asteroid-big'
+
+    def destroy(self):
+        super().destroy()
+        # 부서지면 작은 소행성 3개로 갈라짐
+        for i in range(3):
+            a = i * math.tau / 3 + random.uniform(-0.4, 0.4)
+            game_world.add_object(SmallAsteroid(self.earth, self.moon, self.on_collect,
+                                                self.x + math.cos(a) * 10, self.y + math.sin(a) * 10),
+                                  game_world.ENEMY)
