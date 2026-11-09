@@ -2,6 +2,7 @@ import math
 import random
 
 import game_world
+from fragment import Fragment
 from sheet import get_sheet
 
 SPAWN_DISTANCE = 470
@@ -12,18 +13,20 @@ class SmallAsteroid:
     speed = 60
     max_hp = 1
     damage = 5
+    fragments = 1
     sheet_name = 'asteroid-small'
 
-    def __init__(self, earth, x, y):
-        self.earth = earth
+    def __init__(self, earth, moon, on_collect, x, y):
+        self.earth, self.moon, self.on_collect = earth, moon, on_collect
         self.sheet = get_sheet(self.sheet_name)
         self.x, self.y = x, y
         self.hp = self.max_hp
         self.t = random.uniform(0, 2)
 
     @classmethod
-    def at_edge(cls, earth, angle):
-        return cls(earth, earth.x + math.cos(angle) * SPAWN_DISTANCE, earth.y + math.sin(angle) * SPAWN_DISTANCE)
+    def at_edge(cls, earth, moon, on_collect, angle):
+        return cls(earth, moon, on_collect,
+                   earth.x + math.cos(angle) * SPAWN_DISTANCE, earth.y + math.sin(angle) * SPAWN_DISTANCE)
 
     def update(self, dt):
         self.t += dt
@@ -37,9 +40,18 @@ class SmallAsteroid:
             game_world.remove_object(self)
 
     def hit(self, damage):
+        if self.hp <= 0:
+            return
         self.hp -= damage
         if self.hp <= 0:
-            game_world.remove_object(self)
+            self.destroy()
+
+    def destroy(self):
+        self.hp = 0
+        game_world.remove_object(self)
+        # 부서진 자리에 경험치 파편을 떨어뜨림
+        for _ in range(self.fragments):
+            game_world.add_object(Fragment(self.x, self.y, self.moon, self.on_collect), game_world.PICKUP)
 
     def draw(self):
         self.sheet.draw(self.t, self.x, self.y)

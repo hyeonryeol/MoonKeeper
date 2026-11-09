@@ -1,0 +1,303 @@
+{
+ "frames": [
+  {
+   "filename": "fragment 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "fragment 1",
+   "frame": {
+    "x": 14,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "fragment 2",
+   "frame": {
+    "x": 28,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "fragment 3",
+   "frame": {
+    "x": 42,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "fragment 4",
+   "frame": {
+    "x": 0,
+    "y": 14,
+    "w": 14,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "fragment 5",
+   "frame": {
+    "x": 14,
+    "y": 14,
+    "w": 14,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "fragment 6",
+   "frame": {
+    "x": 28,
+    "y": 14,
+    "w": 14,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "fragment 7",
+   "frame": {
+    "x": 42,
+    "y": 14,
+    "w": 14,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "fragment 8",
+   "frame": {
+    "x": 0,
+    "y": 28,
+    "w": 14,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "fragment 9",
+   "frame": {
+    "x": 14,
+    "y": 28,
+    "w": 14,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "fragment 10",
+   "frame": {
+    "x": 28,
+    "y": 28,
+    "w": 14,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "fragment 11",
+   "frame": {
+    "x": 42,
+    "y": 28,
+    "w": 14,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 14
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "fragment.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 56,
+   "h": 42
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "fragment",
+    "from": 0,
+    "to": 11,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/fragment",
+   "name": "Fragment",
+   "fps": 12,
+   "loop": true,
+   "frames": 12,
+   "frameSize": [
+    14,
+    14
+   ],
+   "pivot": [
+    7,
+    7
+   ],
+   "columns": 4
+  }
+ }
+}

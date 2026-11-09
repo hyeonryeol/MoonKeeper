@@ -14,7 +14,7 @@ running = True
 
 
 def init():
-    global background, earth, moon, spawn_timer
+    global background, earth, moon, spawn_timer, xp
     game_world.clear()
     background = load_image('res/background.png')
     earth = Earth()
@@ -22,6 +22,12 @@ def init():
     moon = Moon(earth)
     game_world.add_object(moon, game_world.MOON)
     spawn_timer = 1.0
+    xp = 0
+
+
+def gain_xp(n):
+    global xp
+    xp += n
 
 
 def handle_events():
@@ -40,7 +46,7 @@ def spawn(dt):
     spawn_timer -= dt
     if spawn_timer <= 0:
         # 포탑 시험용으로 2초마다 화면 밖 아무 방향에서 하나씩
-        game_world.add_object(SmallAsteroid.at_edge(earth, random.uniform(0, math.tau)), game_world.ENEMY)
+        game_world.add_object(SmallAsteroid.at_edge(earth, moon, gain_xp, random.uniform(0, math.tau)), game_world.ENEMY)
         spawn_timer = 2.0
 
 

@@ -17,6 +17,7 @@ class Moon:
         self.speed = 160
         self.theta = math.pi / 2
         self.radius = 15
+        self.pickup_radius = 18
         self.right = self.left = False
         self.gears = []
         self.t = 0.0
@@ -26,8 +27,16 @@ class Moon:
         # 기본 포탑은 처음부터 달려 있음
         self.gears.append(Turret(self, 'turret', 'gear-turret', 0))
 
-    def orbit_radius(self):
-        return 100 + (self.speed - 80) * 0.4
+    def orbit_radius(self, speed=None):
+        if speed is None:
+            speed = self.speed
+        return 100 + (speed - 80) * 0.4
+
+    def min_orbit_radius(self):
+        return self.orbit_radius(MIN_SPEED)
+
+    def max_orbit_radius(self):
+        return self.orbit_radius(MAX_SPEED)
 
     def handle_event(self, event):
         if event.type in (SDL_KEYDOWN, SDL_KEYUP):
