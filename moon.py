@@ -6,7 +6,7 @@ from gear import Turret
 from sheet import get_sheet
 
 MIN_SPEED, MAX_SPEED = 80, 400
-FORCE = 200
+BASE_FORCE = 200
 ORBIT_EASE = 5
 
 
@@ -38,6 +38,14 @@ class Moon:
     def max_orbit_radius(self):
         return self.orbit_radius(MAX_SPEED)
 
+    def weight(self):
+        # 처음부터 달린 기본 포탑은 무게에 넣지 않음
+        return len(self.gears) - 1
+
+    def force(self):
+        # 장비가 늘수록 가속도 감속도 둔해짐
+        return BASE_FORCE / (1 + 0.15 * self.weight())
+
     def gear(self, key):
         for g in self.gears:
             if g.key == key:
@@ -60,7 +68,7 @@ class Moon:
         self.t += dt
         # 오른쪽 가속 왼쪽 감속 손을 떼면 그 속도 유지
         push = (1 if self.right else 0) - (1 if self.left else 0)
-        self.speed = clamp(MIN_SPEED, self.speed + push * FORCE * dt, MAX_SPEED)
+        self.speed = clamp(MIN_SPEED, self.speed + push * self.force() * dt, MAX_SPEED)
         # 목표 궤도 쪽으로 부드럽게 미끄러지듯 옮겨 감
         self.orbit += (self.orbit_radius() - self.orbit) * min(1.0, ORBIT_EASE * dt)
         # 각속도는 속도 나누기 반지름

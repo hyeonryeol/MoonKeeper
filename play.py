@@ -154,7 +154,7 @@ def draw_cards():
         font.draw(l + 12, b + CARD_H - 24, '%d  %s' % (i + 1, data['kind']), color)
         draw_icon(data['sheet'], cx, CARD_Y + 45, 4)
         font.draw(l + 14, CARD_Y - 20, data['name'], (243, 239, 228))
-        font.draw(l + 14, CARD_Y - 42, '새 장비', color)
+        font.draw(l + 14, CARD_Y - 42, '새 장비  무게 +1', color)
         for j, line in enumerate(data['desc']):
             font.draw(l + 14, CARD_Y - 72 - j * 20, line, (201, 204, 224))
 
