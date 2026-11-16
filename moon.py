@@ -53,6 +53,13 @@ class Moon:
                 return g
         return None
 
+    def slow_at(self, x, y):
+        # 중력 닻 범위 안의 소행성은 절반 속도
+        anchor = self.gear('anchor')
+        if anchor and math.hypot(x - self.x, y - self.y) < anchor.reach():
+            return 0.5
+        return 1.0
+
     def handle_event(self, event):
         if event.type in (SDL_KEYDOWN, SDL_KEYUP):
             down = event.type == SDL_KEYDOWN
@@ -70,6 +77,11 @@ class Moon:
         # 작은 소행성은 들이받으면 바로 부서짐
         if not a.heavy:
             a.destroy()
+            return
+        # 방패가 충전돼 있으면 큰 소행성을 튕겨내고 달은 그대로
+        shield = self.gear('shield')
+        if shield and shield.use():
+            a.knock_back()
             return
         # 큰 소행성은 피해 1만 주고 달 속도가 절반으로 떨어짐
         a.hit(1)

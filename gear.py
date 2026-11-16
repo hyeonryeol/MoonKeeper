@@ -206,3 +206,35 @@ class Coil(Gear):
         for a in hit:
             a.hit(1)
         self.cool = 1.2
+
+
+class Shield(Gear):
+    def __init__(self, moon, key, sheet_name, slot):
+        super().__init__(moon, key, sheet_name, slot)
+        self.charged = True
+        self.wait = 0.0
+
+    def use(self):
+        # 충전돼 있으면 한 번 막고 8초 뒤에 다시 충전됨
+        if not self.charged:
+            return False
+        self.charged = False
+        self.wait = 8
+        return True
+
+    def update(self, dt):
+        super().update(dt)
+        if not self.charged:
+            self.wait -= dt
+            if self.wait <= 0:
+                self.charged = True
+
+    def draw(self):
+        # 충전돼 있을 때만 달 둘레에 고리가 보임
+        if self.charged:
+            self.sheet.draw(self.t, self.moon.x, self.moon.y)
+
+
+class Anchor(Gear):
+    def reach(self):
+        return 90

@@ -1,0 +1,567 @@
+{
+ "frames": [
+  {
+   "filename": "shield-ring 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 1",
+   "frame": {
+    "x": 56,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 2",
+   "frame": {
+    "x": 112,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 3",
+   "frame": {
+    "x": 168,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 4",
+   "frame": {
+    "x": 224,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 5",
+   "frame": {
+    "x": 0,
+    "y": 56,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 6",
+   "frame": {
+    "x": 56,
+    "y": 56,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 7",
+   "frame": {
+    "x": 112,
+    "y": 56,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 8",
+   "frame": {
+    "x": 168,
+    "y": 56,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 9",
+   "frame": {
+    "x": 224,
+    "y": 56,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 10",
+   "frame": {
+    "x": 0,
+    "y": 112,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 11",
+   "frame": {
+    "x": 56,
+    "y": 112,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 12",
+   "frame": {
+    "x": 112,
+    "y": 112,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 13",
+   "frame": {
+    "x": 168,
+    "y": 112,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 14",
+   "frame": {
+    "x": 224,
+    "y": 112,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 15",
+   "frame": {
+    "x": 0,
+    "y": 168,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 16",
+   "frame": {
+    "x": 56,
+    "y": 168,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 17",
+   "frame": {
+    "x": 112,
+    "y": 168,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 18",
+   "frame": {
+    "x": 168,
+    "y": 168,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 19",
+   "frame": {
+    "x": 224,
+    "y": 168,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 20",
+   "frame": {
+    "x": 0,
+    "y": 224,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 21",
+   "frame": {
+    "x": 56,
+    "y": 224,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 22",
+   "frame": {
+    "x": 112,
+    "y": 224,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  },
+  {
+   "filename": "shield-ring 23",
+   "frame": {
+    "x": 168,
+    "y": 224,
+    "w": 56,
+    "h": 56
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 56,
+    "h": 56
+   },
+   "sourceSize": {
+    "w": 56,
+    "h": 56
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "shield-ring.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 280,
+   "h": 280
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "shield-ring",
+    "from": 0,
+    "to": 23,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/shield-ring",
+   "name": "Shield ring",
+   "fps": 12,
+   "loop": true,
+   "frames": 24,
+   "frameSize": [
+    56,
+    56
+   ],
+   "pivot": [
+    28,
+    28
+   ],
+   "columns": 5
+  }
+ }
+}

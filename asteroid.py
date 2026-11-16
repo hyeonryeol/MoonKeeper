@@ -24,6 +24,8 @@ class SmallAsteroid:
         self.hp = self.max_hp
         # 달과 같은 소행성이 매 프레임 계속 부딪히지 않게
         self.ram_cool = 0.0
+        # 방패에 튕겨 나가는 남은 시간
+        self.knock = 0.0
         self.t = random.uniform(0, 2)
 
     @classmethod
@@ -31,14 +33,22 @@ class SmallAsteroid:
         return cls(earth, moon, on_collect,
                    earth.x + math.cos(angle) * SPAWN_DISTANCE, earth.y + math.sin(angle) * SPAWN_DISTANCE)
 
+    def knock_back(self):
+        self.knock = 0.8
+
     def update(self, dt):
         self.t += dt
         self.ram_cool -= dt
         earth = self.earth
         dx, dy = earth.x - self.x, earth.y - self.y
         d = math.hypot(dx, dy)
-        self.x += dx / d * self.speed * dt
-        self.y += dy / d * self.speed * dt
+        speed = self.speed * self.moon.slow_at(self.x, self.y)
+        if self.knock > 0:
+            # 튕겨 나가는 동안은 지구 반대쪽으로 밀려남
+            self.knock -= dt
+            speed = -120
+        self.x += dx / d * speed * dt
+        self.y += dy / d * speed * dt
         if d < earth.radius + self.radius:
             earth.hit(self.damage)
             game_world.remove_object(self)
