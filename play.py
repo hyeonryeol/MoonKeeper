@@ -7,6 +7,7 @@ import augment
 import game_world
 from asteroid import SmallAsteroid, BigAsteroid
 from earth import Earth
+from gear import level_sheet
 from moon import Moon
 from sheet import get_sheet
 
@@ -155,10 +156,12 @@ def draw_cards():
         draw_rectangle(l, b, l + CARD_W, b + CARD_H, *color)
         draw_rectangle(l, b + CARD_H - 6, l + CARD_W, b + CARD_H, *color, 255, True)
         font.draw(l + 12, b + CARD_H - 24, '%d  %s' % (i + 1, data['kind']), color)
-        draw_icon(data['sheet'], cx, CARD_Y + 45, 4)
+        lv = augment.level_of(moon, key)
+        # 강화 카드에는 다음 레벨 모습을 보여줌, 방패 고리는 그림이 커서 1배
+        draw_icon(level_sheet(data['sheet'], lv + 1), cx, CARD_Y + 45, 1 if key == 'shield' else 4)
         font.draw(l + 14, CARD_Y - 20, data['name'], (243, 239, 228))
-        font.draw(l + 14, CARD_Y - 42, '새 장비  무게 +1', color)
-        for j, line in enumerate(data['desc']):
+        font.draw(l + 14, CARD_Y - 42, '강화 Lv %d' % (lv + 1) if lv > 0 else '새 장비  무게 +1', color)
+        for j, line in enumerate(augment.describe(moon, key)):
             font.draw(l + 14, CARD_Y - 72 - j * 20, line, (201, 204, 224))
 
 

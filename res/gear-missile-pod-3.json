@@ -1,0 +1,303 @@
+{
+ "frames": [
+  {
+   "filename": "gear-missile-pod-3 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 18,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-missile-pod-3 1",
+   "frame": {
+    "x": 18,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 18,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-missile-pod-3 2",
+   "frame": {
+    "x": 36,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 18,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-missile-pod-3 3",
+   "frame": {
+    "x": 54,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 18,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-missile-pod-3 4",
+   "frame": {
+    "x": 0,
+    "y": 14,
+    "w": 18,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 18,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-missile-pod-3 5",
+   "frame": {
+    "x": 18,
+    "y": 14,
+    "w": 18,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 18,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-missile-pod-3 6",
+   "frame": {
+    "x": 36,
+    "y": 14,
+    "w": 18,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 18,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-missile-pod-3 7",
+   "frame": {
+    "x": 54,
+    "y": 14,
+    "w": 18,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 18,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-missile-pod-3 8",
+   "frame": {
+    "x": 0,
+    "y": 28,
+    "w": 18,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 18,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-missile-pod-3 9",
+   "frame": {
+    "x": 18,
+    "y": 28,
+    "w": 18,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 18,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-missile-pod-3 10",
+   "frame": {
+    "x": 36,
+    "y": 28,
+    "w": 18,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 18,
+    "h": 14
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-missile-pod-3 11",
+   "frame": {
+    "x": 54,
+    "y": 28,
+    "w": 18,
+    "h": 14
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 14
+   },
+   "sourceSize": {
+    "w": 18,
+    "h": 14
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "gear-missile-pod-3.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 72,
+   "h": 42
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "gear-missile-pod-3",
+    "from": 0,
+    "to": 11,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/gear-missile-pod-3",
+   "name": "Missile pod Lv3",
+   "fps": 12,
+   "loop": true,
+   "frames": 12,
+   "frameSize": [
+    18,
+    14
+   ],
+   "pivot": [
+    2,
+    7
+   ],
+   "columns": 4
+  }
+ }
+}

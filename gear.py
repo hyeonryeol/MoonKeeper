@@ -9,6 +9,11 @@ from sheet import get_sheet
 SLOTS = [0.0, 0.9, -0.9, 1.8, -1.8, 2.6, -2.6, math.pi]
 
 
+def level_sheet(name, level):
+    # 레벨 2 3은 강화된 그림을 따로 씀
+    return name if level <= 1 else '%s-%d' % (name, level)
+
+
 def nearest_enemy(x, y, reach, skip=()):
     # skip에 든 적은 빼고 찾음
     best, best_d = None, reach
@@ -25,9 +30,18 @@ class Gear:
     def __init__(self, moon, key, sheet_name, slot):
         self.moon = moon
         self.key = key
-        self.sheet = get_sheet(sheet_name)
+        self.sheet_name = sheet_name
         self.offset = SLOTS[slot % len(SLOTS)]
+        # 같은 증강을 다시 고르면 3까지 올라감
+        self.level = 1
         self.t = 0.0
+
+    def look(self):
+        return get_sheet(level_sheet(self.sheet_name, self.level))
+
+    def by_level(self, values):
+        # 레벨 1 2 3에 맞는 값
+        return values[min(self.level, len(values)) - 1]
 
     def mount(self):
         # 달 중심에서 장착 각도 방향으로 달 반지름만큼
@@ -40,7 +54,7 @@ class Gear:
 
     def draw(self):
         x, y, a = self.mount()
-        self.sheet.draw(self.t, x, y, a)
+        self.look().draw(self.t, x, y, a)
 
 
 class Turret(Gear):
@@ -74,16 +88,16 @@ class Turret(Gear):
 
     def draw(self):
         x, y, a = self.mount()
-        self.sheet.draw(self.t, x, y, a if self.aim is None else self.aim)
+        self.look().draw(self.t, x, y, a if self.aim is None else self.aim)
 
 
 class LaserTurret(Turret):
     # 기본 포탑보다 사거리는 짧고 연사는 빠름
     def reach(self):
-        return 150
+        return self.by_level([150, 170, 190])
 
     def reload(self):
-        return 0.25
+        return self.by_level([0.25, 0.2, 0.15])
 
     def shoot(self, x, y, rad):
         game_world.add_object(Bullet(x, y, rad, 520, 1, 'laser-beam', 0.5), game_world.SHOT)
@@ -99,10 +113,12 @@ class MissilePod(Gear):
         self.cool -= dt
         if self.cool > 0 or not game_world.objects_at(game_world.ENEMY):
             return
-        # 4초마다 장착된 방향으로 유도탄 2발을 벌려서 쏨
+        # 4초마다 장착된 방향으로 유도탄을 레벨마다 2 3 4발 벌려서 쏨
         x, y, a = self.mount()
-        for i in range(2):
-            game_world.add_object(Missile(x, y, a + (i - 0.5) * 0.5), game_world.SHOT)
+        count = self.by_level([2, 3, 4])
+        for i in range(count):
+            spread = (i - (count - 1) / 2) * 0.5
+            game_world.add_object(Missile(x, y, a + spread), game_world.SHOT)
         self.cool = 4.0
 
 
@@ -165,11 +181,14 @@ class DroneUnit:
 class Drone(Gear):
     def __init__(self, moon, key, sheet_name, slot):
         super().__init__(moon, key, sheet_name, slot)
-        self.units = [DroneUnit(self, moon.x, moon.y)]
-        self.units[0].state = 'return'
+        self.units = []
 
     def update(self, dt):
         super().update(dt)
+        # 강화할 때마다 드론이 한 대씩 늘어남, 새 드론은 달에서 제자리로 날아감
+        while len(self.units) < self.level:
+            self.units.append(DroneUnit(self, self.moon.x, self.moon.y))
+            self.units[-1].state = 'return'
         n = len(self.units)
         for i, u in enumerate(self.units):
             u.update(dt, i, n)
@@ -177,7 +196,7 @@ class Drone(Gear):
     def draw(self):
         # 달에 붙지 않고 드론마다 제자리에 그림
         for u in self.units:
-            self.sheet.draw(self.t, u.x, u.y)
+            self.look().draw(self.t, u.x, u.y)
 
 
 class Coil(Gear):
@@ -191,12 +210,12 @@ class Coil(Gear):
         if self.cool > 0:
             return
         x, y, _ = self.mount()
-        target = nearest_enemy(x, y, 120)
+        target = nearest_enemy(x, y, self.by_level([120, 120, 150]))
         if target is None:
             return
-        # 가장 가까운 적에서 시작해 80 안의 다음 적으로 3개까지 번개가 옮겨 감
+        # 가장 가까운 적에서 시작해 80 안의 다음 적으로 레벨마다 3 4 5개까지 번개가 옮겨 감
         hit = []
-        while target is not None and len(hit) < 3:
+        while target is not None and len(hit) < self.by_level([3, 4, 5]):
             dx, dy = target.x - x, target.y - y
             # 62픽셀짜리 번개 그림을 두 점 사이 길이에 맞춰 늘림
             effect.play('chain-lightning', x, y, math.atan2(dy, dx), max(0.3, math.hypot(dx, dy) / 62))
@@ -215,11 +234,11 @@ class Shield(Gear):
         self.wait = 0.0
 
     def use(self):
-        # 충전돼 있으면 한 번 막고 8초 뒤에 다시 충전됨
+        # 충전돼 있으면 한 번 막고 레벨마다 8 6 4초 뒤에 다시 충전됨
         if not self.charged:
             return False
         self.charged = False
-        self.wait = 8
+        self.wait = self.by_level([8, 6, 4])
         return True
 
     def update(self, dt):
@@ -232,9 +251,9 @@ class Shield(Gear):
     def draw(self):
         # 충전돼 있을 때만 달 둘레에 고리가 보임
         if self.charged:
-            self.sheet.draw(self.t, self.moon.x, self.moon.y)
+            self.look().draw(self.t, self.moon.x, self.moon.y)
 
 
 class Anchor(Gear):
     def reach(self):
-        return 90
+        return self.by_level([90, 110, 130])

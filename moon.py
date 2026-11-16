@@ -44,10 +44,11 @@ class Moon:
         return len(self.gears) - 1
 
     def force(self):
-        # 장비가 늘수록 가속도 감속도 둔해짐, 추진기가 있으면 무게 영향이 절반
+        # 장비가 늘수록 가속도 감속도 둔해짐, 추진기가 있으면 무게 영향이 레벨마다 1/2 1/3 1/4
         k = 0.15 * self.weight()
-        if self.gear('thruster'):
-            k /= 2
+        thruster = self.gear('thruster')
+        if thruster:
+            k /= 1 + thruster.level
         return BASE_FORCE / (1 + k)
 
     def gear(self, key):
@@ -87,9 +88,9 @@ class Moon:
             a.knock_back()
             return
         # 큰 소행성은 피해 1만 주고 달 속도가 절반으로 떨어짐
-        # 가시 갑옷이 있으면 피해 2에 감속 없음
+        # 가시 갑옷이 있으면 피해가 레벨마다 2 3 4에 감속 없음
         spikes = self.gear('spikes')
-        a.hit(2 if spikes else 1)
+        a.hit(1 + (spikes.level if spikes else 0))
         if not spikes:
             self.speed = max(MIN_SPEED, self.speed / 2)
 

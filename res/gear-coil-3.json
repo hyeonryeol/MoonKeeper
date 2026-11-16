@@ -1,0 +1,303 @@
+{
+ "frames": [
+  {
+   "filename": "gear-coil-3 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-coil-3 1",
+   "frame": {
+    "x": 30,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-coil-3 2",
+   "frame": {
+    "x": 60,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-coil-3 3",
+   "frame": {
+    "x": 90,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-coil-3 4",
+   "frame": {
+    "x": 0,
+    "y": 24,
+    "w": 30,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-coil-3 5",
+   "frame": {
+    "x": 30,
+    "y": 24,
+    "w": 30,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-coil-3 6",
+   "frame": {
+    "x": 60,
+    "y": 24,
+    "w": 30,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-coil-3 7",
+   "frame": {
+    "x": 90,
+    "y": 24,
+    "w": 30,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-coil-3 8",
+   "frame": {
+    "x": 0,
+    "y": 48,
+    "w": 30,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-coil-3 9",
+   "frame": {
+    "x": 30,
+    "y": 48,
+    "w": 30,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-coil-3 10",
+   "frame": {
+    "x": 60,
+    "y": 48,
+    "w": 30,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-coil-3 11",
+   "frame": {
+    "x": 90,
+    "y": 48,
+    "w": 30,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 24
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "gear-coil-3.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 120,
+   "h": 72
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "gear-coil-3",
+    "from": 0,
+    "to": 11,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/gear-coil-3",
+   "name": "Lightning coil Lv3",
+   "fps": 12,
+   "loop": true,
+   "frames": 12,
+   "frameSize": [
+    30,
+    24
+   ],
+   "pivot": [
+    2,
+    12
+   ],
+   "columns": 4
+  }
+ }
+}

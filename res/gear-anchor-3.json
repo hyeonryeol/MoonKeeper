@@ -1,0 +1,567 @@
+{
+ "frames": [
+  {
+   "filename": "gear-anchor-3 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 1",
+   "frame": {
+    "x": 30,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 2",
+   "frame": {
+    "x": 60,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 3",
+   "frame": {
+    "x": 90,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 4",
+   "frame": {
+    "x": 120,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 5",
+   "frame": {
+    "x": 0,
+    "y": 26,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 6",
+   "frame": {
+    "x": 30,
+    "y": 26,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 7",
+   "frame": {
+    "x": 60,
+    "y": 26,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 8",
+   "frame": {
+    "x": 90,
+    "y": 26,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 9",
+   "frame": {
+    "x": 120,
+    "y": 26,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 10",
+   "frame": {
+    "x": 0,
+    "y": 52,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 11",
+   "frame": {
+    "x": 30,
+    "y": 52,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 12",
+   "frame": {
+    "x": 60,
+    "y": 52,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 13",
+   "frame": {
+    "x": 90,
+    "y": 52,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 14",
+   "frame": {
+    "x": 120,
+    "y": 52,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 15",
+   "frame": {
+    "x": 0,
+    "y": 78,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 16",
+   "frame": {
+    "x": 30,
+    "y": 78,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 17",
+   "frame": {
+    "x": 60,
+    "y": 78,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 18",
+   "frame": {
+    "x": 90,
+    "y": 78,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 19",
+   "frame": {
+    "x": 120,
+    "y": 78,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 20",
+   "frame": {
+    "x": 0,
+    "y": 104,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 21",
+   "frame": {
+    "x": 30,
+    "y": 104,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 22",
+   "frame": {
+    "x": 60,
+    "y": 104,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  },
+  {
+   "filename": "gear-anchor-3 23",
+   "frame": {
+    "x": 90,
+    "y": 104,
+    "w": 30,
+    "h": 26
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 26
+   },
+   "sourceSize": {
+    "w": 30,
+    "h": 26
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "gear-anchor-3.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 150,
+   "h": 130
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "gear-anchor-3",
+    "from": 0,
+    "to": 23,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/gear-anchor-3",
+   "name": "Gravity anchor Lv3",
+   "fps": 12,
+   "loop": true,
+   "frames": 24,
+   "frameSize": [
+    30,
+    26
+   ],
+   "pivot": [
+    4,
+    13
+   ],
+   "columns": 5
+  }
+ }
+}

@@ -1,0 +1,303 @@
+{
+ "frames": [
+  {
+   "filename": "drone-3 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 12
+   },
+   "duration": 83
+  },
+  {
+   "filename": "drone-3 1",
+   "frame": {
+    "x": 14,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 12
+   },
+   "duration": 83
+  },
+  {
+   "filename": "drone-3 2",
+   "frame": {
+    "x": 28,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 12
+   },
+   "duration": 83
+  },
+  {
+   "filename": "drone-3 3",
+   "frame": {
+    "x": 42,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 12
+   },
+   "duration": 83
+  },
+  {
+   "filename": "drone-3 4",
+   "frame": {
+    "x": 0,
+    "y": 12,
+    "w": 14,
+    "h": 12
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 12
+   },
+   "duration": 83
+  },
+  {
+   "filename": "drone-3 5",
+   "frame": {
+    "x": 14,
+    "y": 12,
+    "w": 14,
+    "h": 12
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 12
+   },
+   "duration": 83
+  },
+  {
+   "filename": "drone-3 6",
+   "frame": {
+    "x": 28,
+    "y": 12,
+    "w": 14,
+    "h": 12
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 12
+   },
+   "duration": 83
+  },
+  {
+   "filename": "drone-3 7",
+   "frame": {
+    "x": 42,
+    "y": 12,
+    "w": 14,
+    "h": 12
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 12
+   },
+   "duration": 83
+  },
+  {
+   "filename": "drone-3 8",
+   "frame": {
+    "x": 0,
+    "y": 24,
+    "w": 14,
+    "h": 12
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 12
+   },
+   "duration": 83
+  },
+  {
+   "filename": "drone-3 9",
+   "frame": {
+    "x": 14,
+    "y": 24,
+    "w": 14,
+    "h": 12
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 12
+   },
+   "duration": 83
+  },
+  {
+   "filename": "drone-3 10",
+   "frame": {
+    "x": 28,
+    "y": 24,
+    "w": 14,
+    "h": 12
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 12
+   },
+   "duration": 83
+  },
+  {
+   "filename": "drone-3 11",
+   "frame": {
+    "x": 42,
+    "y": 24,
+    "w": 14,
+    "h": 12
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 14,
+    "h": 12
+   },
+   "sourceSize": {
+    "w": 14,
+    "h": 12
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "drone-3.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 56,
+   "h": 36
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "drone-3",
+    "from": 0,
+    "to": 11,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/drone-3",
+   "name": "Orbit drone Lv3",
+   "fps": 12,
+   "loop": true,
+   "frames": 12,
+   "frameSize": [
+    14,
+    12
+   ],
+   "pivot": [
+    7,
+    6
+   ],
+   "columns": 4
+  }
+ }
+}
