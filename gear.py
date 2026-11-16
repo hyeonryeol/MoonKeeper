@@ -1,5 +1,6 @@
 import math
 
+import effect
 import game_world
 from bullet import Bullet, Missile
 from sheet import get_sheet
@@ -8,9 +9,12 @@ from sheet import get_sheet
 SLOTS = [0.0, 0.9, -0.9, 1.8, -1.8, 2.6, -2.6, math.pi]
 
 
-def nearest_enemy(x, y, reach):
+def nearest_enemy(x, y, reach, skip=()):
+    # skip에 든 적은 빼고 찾음
     best, best_d = None, reach
     for a in game_world.objects_at(game_world.ENEMY):
+        if a in skip:
+            continue
         d = math.hypot(a.x - x, a.y - y)
         if d < best_d:
             best, best_d = a, d
@@ -100,3 +104,105 @@ class MissilePod(Gear):
         for i in range(2):
             game_world.add_object(Missile(x, y, a + (i - 0.5) * 0.5), game_world.SHOT)
         self.cool = 4.0
+
+
+class DroneUnit:
+    radius = 5
+    speed = 260
+    orbit = 26
+    reach = 110
+    leash = 180
+
+    def __init__(self, owner, x, y):
+        self.owner = owner
+        self.x, self.y = x, y
+        self.state = 'orbit'
+        self.target = None
+
+    def home(self, i, n):
+        # 드론 n대가 달 둘레에 고르게 나눠 돎
+        moon = self.owner.moon
+        a = self.owner.t * 3 + i * math.tau / n
+        return moon.x + math.cos(a) * self.orbit, moon.y + math.sin(a) * self.orbit
+
+    def fly_to(self, x, y, dt):
+        dx, dy = x - self.x, y - self.y
+        d = math.hypot(dx, dy)
+        # 달이 빨리 돌아도 따라잡도록 달 속도를 더함
+        step = (self.speed + self.owner.moon.speed) * dt
+        if d <= step:
+            self.x, self.y = x, y
+            return True
+        self.x += dx / d * step
+        self.y += dy / d * step
+        return False
+
+    def update(self, dt, i, n):
+        moon = self.owner.moon
+        hx, hy = self.home(i, n)
+        if self.state == 'orbit':
+            self.x, self.y = hx, hy
+            # 다른 드론이 노리는 적은 빼고 가까운 적을 찾음
+            taken = [d.target for d in self.owner.units if d is not self]
+            self.target = nearest_enemy(moon.x, moon.y, self.reach, taken)
+            if self.target:
+                self.state = 'attack'
+        elif self.state == 'attack':
+            # 목표가 사라졌거나 달에서 너무 멀어지면 돌아옴
+            if self.target not in game_world.objects_at(game_world.ENEMY) or                     math.hypot(self.x - moon.x, self.y - moon.y) > self.leash:
+                self.state = 'return'
+                return
+            self.fly_to(self.target.x, self.target.y, dt)
+            if math.hypot(self.target.x - self.x, self.target.y - self.y) < self.target.radius + self.radius:
+                self.target.hit(1)
+                self.state = 'return'
+        elif self.state == 'return':
+            self.target = None
+            if self.fly_to(hx, hy, dt):
+                self.state = 'orbit'
+
+
+class Drone(Gear):
+    def __init__(self, moon, key, sheet_name, slot):
+        super().__init__(moon, key, sheet_name, slot)
+        self.units = [DroneUnit(self, moon.x, moon.y)]
+        self.units[0].state = 'return'
+
+    def update(self, dt):
+        super().update(dt)
+        n = len(self.units)
+        for i, u in enumerate(self.units):
+            u.update(dt, i, n)
+
+    def draw(self):
+        # 달에 붙지 않고 드론마다 제자리에 그림
+        for u in self.units:
+            self.sheet.draw(self.t, u.x, u.y)
+
+
+class Coil(Gear):
+    def __init__(self, moon, key, sheet_name, slot):
+        super().__init__(moon, key, sheet_name, slot)
+        self.cool = 0.0
+
+    def update(self, dt):
+        super().update(dt)
+        self.cool -= dt
+        if self.cool > 0:
+            return
+        x, y, _ = self.mount()
+        target = nearest_enemy(x, y, 120)
+        if target is None:
+            return
+        # 가장 가까운 적에서 시작해 80 안의 다음 적으로 3개까지 번개가 옮겨 감
+        hit = []
+        while target is not None and len(hit) < 3:
+            dx, dy = target.x - x, target.y - y
+            # 62픽셀짜리 번개 그림을 두 점 사이 길이에 맞춰 늘림
+            effect.play('chain-lightning', x, y, math.atan2(dy, dx), max(0.3, math.hypot(dx, dy) / 62))
+            hit.append(target)
+            x, y = target.x, target.y
+            target = nearest_enemy(x, y, 80, hit)
+        for a in hit:
+            a.hit(1)
+        self.cool = 1.2
