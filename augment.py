@@ -2,7 +2,7 @@ import random
 
 from gear import Gear, LaserTurret, MissilePod, Drone, Coil, Shield, Anchor
 
-# 가시 갑옷과 추진기는 아직 달에 붙기만 함
+# 가시 갑옷과 추진기는 따로 하는 일 없이 달이 가지고 있는지만 봄
 AUGMENTS = {
     'laser': dict(name='레이저 포탑', kind='무기', desc=['짧은 사거리', '빠른 연사'], sheet='gear-laser', cls=LaserTurret),
     'missile': dict(name='미사일 포드', kind='무기', desc=['4초마다 유도탄', '큰 소행성에 강함'], sheet='gear-missile-pod', cls=MissilePod),
