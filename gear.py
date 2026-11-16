@@ -1,7 +1,7 @@
 import math
 
 import game_world
-from bullet import Bullet
+from bullet import Bullet, Missile
 from sheet import get_sheet
 
 # 장비가 붙는 자리, 지구 반대쪽을 0으로 잡은 각도
@@ -71,3 +71,32 @@ class Turret(Gear):
     def draw(self):
         x, y, a = self.mount()
         self.sheet.draw(self.t, x, y, a if self.aim is None else self.aim)
+
+
+class LaserTurret(Turret):
+    # 기본 포탑보다 사거리는 짧고 연사는 빠름
+    def reach(self):
+        return 150
+
+    def reload(self):
+        return 0.25
+
+    def shoot(self, x, y, rad):
+        game_world.add_object(Bullet(x, y, rad, 520, 1, 'laser-beam', 0.5), game_world.SHOT)
+
+
+class MissilePod(Gear):
+    def __init__(self, moon, key, sheet_name, slot):
+        super().__init__(moon, key, sheet_name, slot)
+        self.cool = 1.0
+
+    def update(self, dt):
+        super().update(dt)
+        self.cool -= dt
+        if self.cool > 0 or not game_world.objects_at(game_world.ENEMY):
+            return
+        # 4초마다 장착된 방향으로 유도탄 2발을 벌려서 쏨
+        x, y, a = self.mount()
+        for i in range(2):
+            game_world.add_object(Missile(x, y, a + (i - 0.5) * 0.5), game_world.SHOT)
+        self.cool = 4.0

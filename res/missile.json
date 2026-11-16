@@ -1,0 +1,171 @@
+{
+ "frames": [
+  {
+   "filename": "missile 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 24,
+    "h": 8
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 24,
+    "h": 8
+   },
+   "sourceSize": {
+    "w": 24,
+    "h": 8
+   },
+   "duration": 83
+  },
+  {
+   "filename": "missile 1",
+   "frame": {
+    "x": 24,
+    "y": 0,
+    "w": 24,
+    "h": 8
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 24,
+    "h": 8
+   },
+   "sourceSize": {
+    "w": 24,
+    "h": 8
+   },
+   "duration": 83
+  },
+  {
+   "filename": "missile 2",
+   "frame": {
+    "x": 0,
+    "y": 8,
+    "w": 24,
+    "h": 8
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 24,
+    "h": 8
+   },
+   "sourceSize": {
+    "w": 24,
+    "h": 8
+   },
+   "duration": 83
+  },
+  {
+   "filename": "missile 3",
+   "frame": {
+    "x": 24,
+    "y": 8,
+    "w": 24,
+    "h": 8
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 24,
+    "h": 8
+   },
+   "sourceSize": {
+    "w": 24,
+    "h": 8
+   },
+   "duration": 83
+  },
+  {
+   "filename": "missile 4",
+   "frame": {
+    "x": 0,
+    "y": 16,
+    "w": 24,
+    "h": 8
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 24,
+    "h": 8
+   },
+   "sourceSize": {
+    "w": 24,
+    "h": 8
+   },
+   "duration": 83
+  },
+  {
+   "filename": "missile 5",
+   "frame": {
+    "x": 24,
+    "y": 16,
+    "w": 24,
+    "h": 8
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 24,
+    "h": 8
+   },
+   "sourceSize": {
+    "w": 24,
+    "h": 8
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "missile.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 48,
+   "h": 24
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "missile",
+    "from": 0,
+    "to": 5,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/missile",
+   "name": "Homing missile",
+   "fps": 12,
+   "loop": true,
+   "frames": 6,
+   "frameSize": [
+    24,
+    8
+   ],
+   "pivot": [
+    16,
+    4
+   ],
+   "columns": 2
+  }
+ }
+}

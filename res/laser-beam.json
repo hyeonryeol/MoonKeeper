@@ -1,0 +1,171 @@
+{
+ "frames": [
+  {
+   "filename": "laser-beam 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 9
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 9
+   },
+   "sourceSize": {
+    "w": 32,
+    "h": 9
+   },
+   "duration": 83
+  },
+  {
+   "filename": "laser-beam 1",
+   "frame": {
+    "x": 32,
+    "y": 0,
+    "w": 32,
+    "h": 9
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 9
+   },
+   "sourceSize": {
+    "w": 32,
+    "h": 9
+   },
+   "duration": 83
+  },
+  {
+   "filename": "laser-beam 2",
+   "frame": {
+    "x": 0,
+    "y": 9,
+    "w": 32,
+    "h": 9
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 9
+   },
+   "sourceSize": {
+    "w": 32,
+    "h": 9
+   },
+   "duration": 83
+  },
+  {
+   "filename": "laser-beam 3",
+   "frame": {
+    "x": 32,
+    "y": 9,
+    "w": 32,
+    "h": 9
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 9
+   },
+   "sourceSize": {
+    "w": 32,
+    "h": 9
+   },
+   "duration": 83
+  },
+  {
+   "filename": "laser-beam 4",
+   "frame": {
+    "x": 0,
+    "y": 18,
+    "w": 32,
+    "h": 9
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 9
+   },
+   "sourceSize": {
+    "w": 32,
+    "h": 9
+   },
+   "duration": 83
+  },
+  {
+   "filename": "laser-beam 5",
+   "frame": {
+    "x": 32,
+    "y": 18,
+    "w": 32,
+    "h": 9
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 9
+   },
+   "sourceSize": {
+    "w": 32,
+    "h": 9
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "laser-beam.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 64,
+   "h": 27
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "laser-beam",
+    "from": 0,
+    "to": 5,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/laser-beam",
+   "name": "Piercing laser",
+   "fps": 12,
+   "loop": true,
+   "frames": 6,
+   "frameSize": [
+    32,
+    9
+   ],
+   "pivot": [
+    0,
+    4
+   ],
+   "columns": 2
+  }
+ }
+}
