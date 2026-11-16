@@ -14,14 +14,18 @@ def remove_object(o):
             return
 
 
+def add_objects(ol, depth):
+    world[depth] += ol
+
+
 def objects_at(depth):
     return world[depth]
 
 
-def update(dt):
+def update():
     for layer in world:
         for o in layer[:]:
-            o.update(dt)
+            o.update()
 
 
 def render():

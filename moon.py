@@ -2,6 +2,7 @@ import math
 
 from pico2d import SDL_KEYDOWN, SDL_KEYUP, SDLK_LEFT, SDLK_RIGHT, clamp
 
+import game_framework
 import game_world
 from gear import Turret
 from sheet import get_sheet
@@ -94,7 +95,8 @@ class Moon:
         if not spikes:
             self.speed = max(MIN_SPEED, self.speed / 2)
 
-    def update(self, dt):
+    def update(self):
+        dt = game_framework.frame_time
         self.t += dt
         # 오른쪽 가속 왼쪽 감속 손을 떼면 그 속도 유지
         push = (1 if self.right else 0) - (1 if self.left else 0)
@@ -108,7 +110,7 @@ class Moon:
             if a.ram_cool <= 0 and game_world.collide(self, a):
                 self.ram(a)
         for g in self.gears:
-            g.update(dt)
+            g.update()
 
     def draw(self):
         self.sheet.draw(self.t, self.x, self.y)

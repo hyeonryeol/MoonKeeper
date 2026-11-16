@@ -1,6 +1,7 @@
 import math
 
 import effect
+import game_framework
 import game_world
 from bullet import Bullet, Missile
 from sheet import get_sheet
@@ -49,7 +50,8 @@ class Gear:
         r = self.moon.radius - 2
         return self.moon.x + math.cos(a) * r, self.moon.y + math.sin(a) * r, a
 
-    def update(self, dt):
+    def update(self):
+        dt = game_framework.frame_time
         self.t += dt
 
     def draw(self):
@@ -72,8 +74,9 @@ class Turret(Gear):
     def shoot(self, x, y, rad):
         game_world.add_object(Bullet(x, y, rad), game_world.SHOT)
 
-    def update(self, dt):
-        super().update(dt)
+    def update(self):
+        dt = game_framework.frame_time
+        super().update()
         self.cool -= dt
         x, y, _ = self.mount()
         target = nearest_enemy(x, y, self.reach())
@@ -108,8 +111,9 @@ class MissilePod(Gear):
         super().__init__(moon, key, sheet_name, slot)
         self.cool = 1.0
 
-    def update(self, dt):
-        super().update(dt)
+    def update(self):
+        dt = game_framework.frame_time
+        super().update()
         self.cool -= dt
         if self.cool > 0 or not game_world.objects_at(game_world.ENEMY):
             return
@@ -183,8 +187,9 @@ class Drone(Gear):
         super().__init__(moon, key, sheet_name, slot)
         self.units = []
 
-    def update(self, dt):
-        super().update(dt)
+    def update(self):
+        dt = game_framework.frame_time
+        super().update()
         # 강화할 때마다 드론이 한 대씩 늘어남, 새 드론은 달에서 제자리로 날아감
         while len(self.units) < self.level:
             self.units.append(DroneUnit(self, self.moon.x, self.moon.y))
@@ -204,8 +209,9 @@ class Coil(Gear):
         super().__init__(moon, key, sheet_name, slot)
         self.cool = 0.0
 
-    def update(self, dt):
-        super().update(dt)
+    def update(self):
+        dt = game_framework.frame_time
+        super().update()
         self.cool -= dt
         if self.cool > 0:
             return
@@ -241,8 +247,9 @@ class Shield(Gear):
         self.wait = self.by_level([8, 6, 4])
         return True
 
-    def update(self, dt):
-        super().update(dt)
+    def update(self):
+        dt = game_framework.frame_time
+        super().update()
         if not self.charged:
             self.wait -= dt
             if self.wait <= 0:

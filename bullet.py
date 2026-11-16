@@ -1,6 +1,7 @@
 import math
 
 import effect
+import game_framework
 import game_world
 from sheet import get_sheet
 
@@ -15,7 +16,8 @@ class Bullet:
         self.radius = 2
         self.t = 0.0
 
-    def update(self, dt):
+    def update(self):
+        dt = game_framework.frame_time
         self.t += dt
         self.x += self.vx * dt
         self.y += self.vy * dt
@@ -55,7 +57,8 @@ class Missile:
                 best = a
         return best
 
-    def update(self, dt):
+    def update(self):
+        dt = game_framework.frame_time
         self.t += dt
         self.target = self.find_target()
         if self.target:

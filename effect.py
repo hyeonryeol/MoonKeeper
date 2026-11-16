@@ -1,3 +1,4 @@
+import game_framework
 import game_world
 from sheet import get_sheet
 
@@ -9,7 +10,8 @@ class Effect:
         self.x, self.y, self.rad, self.stretch = x, y, rad, stretch
         self.t = 0.0
 
-    def update(self, dt):
+    def update(self):
+        dt = game_framework.frame_time
         self.t += dt
         if self.t >= self.sheet.duration():
             game_world.remove_object(self)

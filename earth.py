@@ -1,3 +1,4 @@
+import game_framework
 from sheet import get_sheet
 
 
@@ -13,7 +14,8 @@ class Earth:
     def hit(self, damage):
         self.hp = max(0, self.hp - damage)
 
-    def update(self, dt):
+    def update(self):
+        dt = game_framework.frame_time
         self.t += dt
 
     def draw(self):

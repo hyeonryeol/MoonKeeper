@@ -1,6 +1,7 @@
 import math
 import random
 
+import game_framework
 import game_world
 from sheet import get_sheet
 
@@ -20,7 +21,8 @@ class Fragment:
         self.on_collect = on_collect
         self.t = random.uniform(0, 1)
 
-    def update(self, dt):
+    def update(self):
+        dt = game_framework.frame_time
         self.t += dt
         self.x += self.vx * dt
         self.y += self.vy * dt

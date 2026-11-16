@@ -1,6 +1,7 @@
 import math
 import random
 
+import game_framework
 import game_world
 from fragment import Fragment
 from sheet import get_sheet
@@ -36,7 +37,8 @@ class SmallAsteroid:
     def knock_back(self):
         self.knock = 0.8
 
-    def update(self, dt):
+    def update(self):
+        dt = game_framework.frame_time
         self.t += dt
         self.ram_cool -= dt
         earth = self.earth
