@@ -4,7 +4,7 @@ import random
 import game_framework
 import game_world
 import sound
-from asteroid import SmallAsteroid, MediumAsteroid, LargeAsteroid, Comet, cluster_at_edge
+from asteroid import SmallAsteroid, MediumAsteroid, LargeAsteroid, Comet, Boss, cluster_at_edge
 
 # 웨이브 표, 작은 중간 혜성 군집 큰 소행성 수
 # 1웨이브는 예전 그대로, 2웨이브부터는 위험도가 예전의 두 배 이상이 되게 종류를 섞음
@@ -36,7 +36,7 @@ def duration(n):
 # 웨이브 상태 머신, 수업의 Idle Run Sleep처럼 상태마다 클래스로 나눔
 # 상태 그림
 #   REST 쉬기 --time_out--> SPAWN 소행성 나옴 --wave_cleared--> REST
-#   REST --last_wave--> CLEAR 클리어
+#   REST --boss_time--> BOSS 보스전 --boss_down--> CLEAR 클리어
 #   REST SPAWN --skip--> REST  시험용 N 키
 class Rest:
     def enter(self, waves):
@@ -45,7 +45,7 @@ class Rest:
     def do(self, waves):
         waves.timer -= game_framework.frame_time
         if waves.timer <= 0:
-            waves.fire('last_wave' if waves.number == LAST else 'time_out')
+            waves.fire('boss_time' if waves.number == LAST else 'time_out')
 
 
 class Spawn:
@@ -72,6 +72,16 @@ class Spawn:
             waves.fire('wave_cleared')
 
 
+class BossFight:
+    def enter(self, waves):
+        waves.boss = Boss.at_edge(waves.earth, waves.moon, waves.on_collect, random.uniform(0, math.tau))
+        game_world.add_object(waves.boss, game_world.ENEMY)
+
+    def do(self, waves):
+        if waves.boss.hp <= 0 and not game_world.objects_at(game_world.ENEMY):
+            waves.fire('boss_down')
+
+
 class Clear:
     def enter(self, waves):
         pass
@@ -83,9 +93,10 @@ class Clear:
 # 이벤트, 지금 상태, 다음 상태
 TRANSITIONS = [
     ('time_out', ['REST'], 'SPAWN'),
-    ('last_wave', ['REST'], 'CLEAR'),
+    ('boss_time', ['REST'], 'BOSS'),
     ('wave_cleared', ['SPAWN'], 'REST'),
     ('skip', ['REST', 'SPAWN'], 'REST'),
+    ('boss_down', ['BOSS'], 'CLEAR'),
 ]
 
 
@@ -97,7 +108,8 @@ class Waves:
         self.queue = []
         self.gap = 0.0
         self.side = 0.0
-        self.states = {'REST': Rest(), 'SPAWN': Spawn(), 'CLEAR': Clear()}
+        self.boss = None
+        self.states = {'REST': Rest(), 'SPAWN': Spawn(), 'BOSS': BossFight(), 'CLEAR': Clear()}
         self.state = 'REST'
         self.states[self.state].enter(self)
 
