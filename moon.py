@@ -89,6 +89,7 @@ class Moon:
         shield = self.gear('shield')
         if shield and shield.use():
             a.knock_back()
+            sound.play('shield')
             return
         # 큰 소행성은 피해 1만 주고 달 속도가 절반으로 떨어짐
         # 가시 갑옷이 있으면 피해가 레벨마다 2 3 4에 감속 없음
