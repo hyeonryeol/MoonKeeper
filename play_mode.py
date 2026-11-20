@@ -72,6 +72,9 @@ def handle_events():
         elif event.type == SDL_KEYDOWN and event.key == SDLK_n:
             # 시험용 웨이브 건너뛰기
             waves.skip()
+        elif event.type == SDL_KEYDOWN and event.key == SDLK_l:
+            # 시험용 바로 레벨업, 다음 레벨까지 모자란 파편만큼 채움
+            gain_xp(need(level) - xp)
         else:
             moon.handle_event(event)
 
