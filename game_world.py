@@ -1,6 +1,7 @@
-BACK, EARTH, PICKUP, ENEMY, MOON, SHOT, EFFECT = range(7)
+# BEAM은 달 아래에 깔리는 빔, 달보다 먼저 그림
+BACK, EARTH, PICKUP, ENEMY, BEAM, MOON, SHOT, EFFECT = range(8)
 
-world = [[] for _ in range(7)]
+world = [[] for _ in range(8)]
 
 
 def add_object(o, depth):
