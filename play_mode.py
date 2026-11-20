@@ -2,6 +2,7 @@ import sys
 
 from pico2d import *
 
+import asteroid
 import augment
 import card_mode
 import common
@@ -9,6 +10,7 @@ import cutin_mode
 import game_framework
 import game_world
 import panels
+import result_mode
 import sound
 from common import W, H
 from earth import Earth
@@ -34,7 +36,7 @@ def need(level):
 
 
 def init():
-    global earth, moon, level, xp, pending, waves, clock, popup, boss_cut
+    global earth, moon, level, xp, pending, waves, clock, popup, boss_cut, fragments
     common.load()
     game_world.clear()
     earth = Earth()
@@ -42,6 +44,8 @@ def init():
     moon = Moon(earth)
     game_world.add_object(moon, game_world.MOON)
     level, xp, pending = 1, 0, 0
+    fragments = 0
+    asteroid.destroyed = 0
     waves = Waves(earth, moon, gain_xp)
     sound.music('battle')
     # 오른쪽 위 작은 스킬 팝업 그림 이름과 지난 시간
@@ -63,8 +67,9 @@ def resume():
 
 
 def gain_xp(n):
-    global xp, level, pending
+    global xp, level, pending, fragments
     xp += n
+    fragments += n
     while xp >= need(level):
         xp -= need(level)
         level += 1
@@ -139,8 +144,20 @@ def update():
         # 화면 전체 컷인이라 제목은 소행성과 지구 사이에, 컷인 동안은 음악을 끄고 끝나면 보스 음악
         sound.stop_music()
         cutin_mode.start('cutin-boss', '거대 소행성 접근', (242, 133, 74), lambda: sound.music('boss'), 215, 1.85, 'boss_cutin')
+    elif earth.hp <= 0:
+        end_game(False)
+    elif waves.cleared():
+        end_game(True)
     elif pending > 0:
         open_cards()
+
+
+def end_game(cleared):
+    # 끝난 순간의 기록을 결과 화면용으로 남김
+    stats = dict(wave=waves.number, last=LAST, time=clock, level=level,
+                 kills=asteroid.destroyed, fragments=fragments, hp=earth.hp)
+    result_mode.set_result(cleared, stats, moon)
+    game_framework.change_mode(result_mode)
 
 
 def bar(x, y, w, h, k, color):
