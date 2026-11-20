@@ -87,6 +87,8 @@ class BigAsteroid(SmallAsteroid):
     fragments = 3
     heavy = True
     sheet_name = 'asteroid-big'
+    boom_name = 'explosion-big'
+    boom_sound = 'explode_big'
 
     def destroy(self):
         super().destroy()
