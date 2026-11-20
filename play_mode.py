@@ -5,6 +5,7 @@ import card_mode
 import common
 import game_framework
 import game_world
+import panels
 import sound
 from common import W, H
 from earth import Earth
@@ -125,6 +126,7 @@ def draw_hud():
     bar(52, H - 33, 200, 14, earth.hp / earth.max_hp, (79, 176, 160))
     fit_icon('fragment', 30, 26, 18)
     bar(52, 21, 200, 10, xp / need(level), (232, 197, 71))
+    panels.draw_skills(moon, common.font, clock)
     draw_wave()
 
 
