@@ -15,10 +15,12 @@ import result_mode
 import sound
 from common import W, H
 from earth import Earth
-from moon import Moon
+from moon import Moon, MIN_SPEED, MAX_SPEED
 from sheet import get_sheet
 from wave import Waves, LAST, REST
 
+# 작은 궤도 다이얼 속도계 자리, 경험치 막대 오른쪽
+SPEEDO_X, SPEEDO_Y = 290, 36
 # 스킬 팝업 왼쪽 위 자리, 웨이브 칸 바로 아래
 POPUP_X, POPUP_Y = 538, 562
 # 스킬은 얻은 순서대로 Q W E
@@ -194,6 +196,9 @@ def draw_hud():
     bar(52, H - 33, 200, 14, earth.hp / earth.max_hp, (79, 176, 160))
     fit_icon('fragment', 30, 26, 18)
     bar(52, 21, 200, 10, xp / need(level), (232, 197, 71))
+    # 속도 단계마다 한 장씩 그린 41장 중 지금 속도에 맞는 장
+    k = (moon.speed - MIN_SPEED) / (MAX_SPEED - MIN_SPEED)
+    get_sheet('speedo-hud').draw(round(k * 40), SPEEDO_X, SPEEDO_Y)
     panels.draw_skills(moon, common.font, clock)
     draw_wave()
 
