@@ -118,3 +118,13 @@ class LargeAsteroid(MediumAsteroid):
             game_world.add_object(MediumAsteroid(self.earth, self.moon, self.on_collect,
                                                  self.x + math.cos(a) * 14, self.y + math.sin(a) * 14),
                                   game_world.ENEMY)
+
+
+def cluster_at_edge(earth, moon, on_collect, angle):
+    # 소행성 군집, 작은 소행성 5개가 한 덩어리로 붙어서 같이 날아옴
+    lead = SmallAsteroid.at_edge(earth, moon, on_collect, angle)
+    group = [lead]
+    for i in range(4):
+        a = i * math.tau / 4 + random.uniform(-0.3, 0.3)
+        group.append(SmallAsteroid(earth, moon, on_collect, lead.x + math.cos(a) * 14, lead.y + math.sin(a) * 14))
+    return group
