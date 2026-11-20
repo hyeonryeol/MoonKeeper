@@ -232,7 +232,7 @@ def draw_wave():
 
 
 def draw_world():
-    # 플레이 화면, 위에 띄우는 카드 모드도 이것부터 그림
+    # 플레이 화면, 위에 덧씌우는 카드 일시정지 컷인 안내 모드도 이것부터 그림
     common.draw_background()
     game_world.render()
     draw_hud()
