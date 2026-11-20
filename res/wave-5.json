@@ -1,0 +1,853 @@
+{
+ "frames": [
+  {
+   "filename": "wave-5 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 1",
+   "frame": {
+    "x": 240,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 2",
+   "frame": {
+    "x": 480,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 3",
+   "frame": {
+    "x": 720,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 4",
+   "frame": {
+    "x": 0,
+    "y": 70,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 5",
+   "frame": {
+    "x": 240,
+    "y": 70,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 6",
+   "frame": {
+    "x": 480,
+    "y": 70,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 7",
+   "frame": {
+    "x": 720,
+    "y": 70,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 8",
+   "frame": {
+    "x": 0,
+    "y": 140,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 9",
+   "frame": {
+    "x": 240,
+    "y": 140,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 10",
+   "frame": {
+    "x": 480,
+    "y": 140,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 11",
+   "frame": {
+    "x": 720,
+    "y": 140,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 12",
+   "frame": {
+    "x": 0,
+    "y": 210,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 13",
+   "frame": {
+    "x": 240,
+    "y": 210,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 14",
+   "frame": {
+    "x": 480,
+    "y": 210,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 15",
+   "frame": {
+    "x": 720,
+    "y": 210,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 16",
+   "frame": {
+    "x": 0,
+    "y": 280,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 17",
+   "frame": {
+    "x": 240,
+    "y": 280,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 18",
+   "frame": {
+    "x": 480,
+    "y": 280,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 19",
+   "frame": {
+    "x": 720,
+    "y": 280,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 20",
+   "frame": {
+    "x": 0,
+    "y": 350,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 21",
+   "frame": {
+    "x": 240,
+    "y": 350,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 22",
+   "frame": {
+    "x": 480,
+    "y": 350,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 23",
+   "frame": {
+    "x": 720,
+    "y": 350,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 24",
+   "frame": {
+    "x": 0,
+    "y": 420,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 25",
+   "frame": {
+    "x": 240,
+    "y": 420,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 26",
+   "frame": {
+    "x": 480,
+    "y": 420,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 27",
+   "frame": {
+    "x": 720,
+    "y": 420,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 28",
+   "frame": {
+    "x": 0,
+    "y": 490,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 29",
+   "frame": {
+    "x": 240,
+    "y": 490,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 30",
+   "frame": {
+    "x": 480,
+    "y": 490,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 31",
+   "frame": {
+    "x": 720,
+    "y": 490,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 32",
+   "frame": {
+    "x": 0,
+    "y": 560,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 33",
+   "frame": {
+    "x": 240,
+    "y": 560,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 34",
+   "frame": {
+    "x": 480,
+    "y": 560,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 35",
+   "frame": {
+    "x": 720,
+    "y": 560,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-5 36",
+   "frame": {
+    "x": 0,
+    "y": 630,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "wave-5.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 960,
+   "h": 700
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "wave-5",
+    "from": 0,
+    "to": 36,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/wave-5",
+   "name": "Wave 5 banner",
+   "fps": 12,
+   "loop": false,
+   "frames": 37,
+   "frameSize": [
+    240,
+    70
+   ],
+   "pivot": [
+    120,
+    35
+   ],
+   "columns": 4
+  }
+ }
+}
