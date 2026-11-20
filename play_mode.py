@@ -69,6 +69,9 @@ def handle_events():
             pass
         elif event.type == SDL_KEYDOWN and event.key == SDLK_ESCAPE:
             game_framework.quit()
+        elif event.type == SDL_KEYDOWN and event.key == SDLK_n:
+            # 시험용 웨이브 건너뛰기
+            waves.skip()
         else:
             moon.handle_event(event)
 

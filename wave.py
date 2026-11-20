@@ -35,6 +35,7 @@ def duration(n):
 # 상태 그림
 #   REST 쉬기 --time_out--> SPAWN 소행성 나옴 --wave_cleared--> REST
 #   REST --last_wave--> CLEAR 클리어
+#   REST SPAWN --skip--> REST  시험용 N 키
 class Rest:
     def enter(self, waves):
         waves.timer = REST
@@ -81,6 +82,7 @@ TRANSITIONS = [
     ('time_out', ['REST'], 'SPAWN'),
     ('last_wave', ['REST'], 'CLEAR'),
     ('wave_cleared', ['SPAWN'], 'REST'),
+    ('skip', ['REST', 'SPAWN'], 'REST'),
 ]
 
 
@@ -114,6 +116,16 @@ class Waves:
 
     def update(self):
         self.states[self.state].do(self)
+
+    def skip(self):
+        # 시험용 다음 웨이브로 바로 넘어감, 화면의 소행성도 지움
+        if self.number >= LAST:
+            return
+        for a in game_world.objects_at(game_world.ENEMY)[:]:
+            game_world.remove_object(a)
+        self.queue = []
+        self.number += 1
+        self.fire('skip')
 
     def resting(self):
         return self.state == 'REST'
