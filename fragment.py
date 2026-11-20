@@ -1,8 +1,10 @@
 import math
 import random
 
+import effect
 import game_framework
 import game_world
+import sound
 from sheet import get_sheet
 
 GRAVITY = 10
@@ -32,6 +34,8 @@ class Fragment:
         self.pull(dt)
         if game_world.distance(self, self.moon) < self.radius + self.moon.pickup_radius:
             game_world.remove_object(self)
+            effect.play('pickup', self.x, self.y)
+            sound.play('pickup')
             self.on_collect(1)
 
     def pull(self, dt):
