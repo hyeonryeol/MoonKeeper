@@ -1,0 +1,2151 @@
+{
+ "frames": [
+  {
+   "filename": "asteroid-boss 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 1",
+   "frame": {
+    "x": 200,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 2",
+   "frame": {
+    "x": 400,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 3",
+   "frame": {
+    "x": 600,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 4",
+   "frame": {
+    "x": 800,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 5",
+   "frame": {
+    "x": 1000,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 6",
+   "frame": {
+    "x": 1200,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 7",
+   "frame": {
+    "x": 1400,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 8",
+   "frame": {
+    "x": 1600,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 9",
+   "frame": {
+    "x": 1800,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 10",
+   "frame": {
+    "x": 0,
+    "y": 200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 11",
+   "frame": {
+    "x": 200,
+    "y": 200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 12",
+   "frame": {
+    "x": 400,
+    "y": 200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 13",
+   "frame": {
+    "x": 600,
+    "y": 200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 14",
+   "frame": {
+    "x": 800,
+    "y": 200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 15",
+   "frame": {
+    "x": 1000,
+    "y": 200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 16",
+   "frame": {
+    "x": 1200,
+    "y": 200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 17",
+   "frame": {
+    "x": 1400,
+    "y": 200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 18",
+   "frame": {
+    "x": 1600,
+    "y": 200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 19",
+   "frame": {
+    "x": 1800,
+    "y": 200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 20",
+   "frame": {
+    "x": 0,
+    "y": 400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 21",
+   "frame": {
+    "x": 200,
+    "y": 400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 22",
+   "frame": {
+    "x": 400,
+    "y": 400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 23",
+   "frame": {
+    "x": 600,
+    "y": 400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 24",
+   "frame": {
+    "x": 800,
+    "y": 400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 25",
+   "frame": {
+    "x": 1000,
+    "y": 400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 26",
+   "frame": {
+    "x": 1200,
+    "y": 400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 27",
+   "frame": {
+    "x": 1400,
+    "y": 400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 28",
+   "frame": {
+    "x": 1600,
+    "y": 400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 29",
+   "frame": {
+    "x": 1800,
+    "y": 400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 30",
+   "frame": {
+    "x": 0,
+    "y": 600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 31",
+   "frame": {
+    "x": 200,
+    "y": 600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 32",
+   "frame": {
+    "x": 400,
+    "y": 600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 33",
+   "frame": {
+    "x": 600,
+    "y": 600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 34",
+   "frame": {
+    "x": 800,
+    "y": 600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 35",
+   "frame": {
+    "x": 1000,
+    "y": 600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 36",
+   "frame": {
+    "x": 1200,
+    "y": 600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 37",
+   "frame": {
+    "x": 1400,
+    "y": 600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 38",
+   "frame": {
+    "x": 1600,
+    "y": 600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 39",
+   "frame": {
+    "x": 1800,
+    "y": 600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 40",
+   "frame": {
+    "x": 0,
+    "y": 800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 41",
+   "frame": {
+    "x": 200,
+    "y": 800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 42",
+   "frame": {
+    "x": 400,
+    "y": 800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 43",
+   "frame": {
+    "x": 600,
+    "y": 800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 44",
+   "frame": {
+    "x": 800,
+    "y": 800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 45",
+   "frame": {
+    "x": 1000,
+    "y": 800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 46",
+   "frame": {
+    "x": 1200,
+    "y": 800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 47",
+   "frame": {
+    "x": 1400,
+    "y": 800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 48",
+   "frame": {
+    "x": 1600,
+    "y": 800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 49",
+   "frame": {
+    "x": 1800,
+    "y": 800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 50",
+   "frame": {
+    "x": 0,
+    "y": 1000,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 51",
+   "frame": {
+    "x": 200,
+    "y": 1000,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 52",
+   "frame": {
+    "x": 400,
+    "y": 1000,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 53",
+   "frame": {
+    "x": 600,
+    "y": 1000,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 54",
+   "frame": {
+    "x": 800,
+    "y": 1000,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 55",
+   "frame": {
+    "x": 1000,
+    "y": 1000,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 56",
+   "frame": {
+    "x": 1200,
+    "y": 1000,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 57",
+   "frame": {
+    "x": 1400,
+    "y": 1000,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 58",
+   "frame": {
+    "x": 1600,
+    "y": 1000,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 59",
+   "frame": {
+    "x": 1800,
+    "y": 1000,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 60",
+   "frame": {
+    "x": 0,
+    "y": 1200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 61",
+   "frame": {
+    "x": 200,
+    "y": 1200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 62",
+   "frame": {
+    "x": 400,
+    "y": 1200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 63",
+   "frame": {
+    "x": 600,
+    "y": 1200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 64",
+   "frame": {
+    "x": 800,
+    "y": 1200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 65",
+   "frame": {
+    "x": 1000,
+    "y": 1200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 66",
+   "frame": {
+    "x": 1200,
+    "y": 1200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 67",
+   "frame": {
+    "x": 1400,
+    "y": 1200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 68",
+   "frame": {
+    "x": 1600,
+    "y": 1200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 69",
+   "frame": {
+    "x": 1800,
+    "y": 1200,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 70",
+   "frame": {
+    "x": 0,
+    "y": 1400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 71",
+   "frame": {
+    "x": 200,
+    "y": 1400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 72",
+   "frame": {
+    "x": 400,
+    "y": 1400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 73",
+   "frame": {
+    "x": 600,
+    "y": 1400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 74",
+   "frame": {
+    "x": 800,
+    "y": 1400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 75",
+   "frame": {
+    "x": 1000,
+    "y": 1400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 76",
+   "frame": {
+    "x": 1200,
+    "y": 1400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 77",
+   "frame": {
+    "x": 1400,
+    "y": 1400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 78",
+   "frame": {
+    "x": 1600,
+    "y": 1400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 79",
+   "frame": {
+    "x": 1800,
+    "y": 1400,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 80",
+   "frame": {
+    "x": 0,
+    "y": 1600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 81",
+   "frame": {
+    "x": 200,
+    "y": 1600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 82",
+   "frame": {
+    "x": 400,
+    "y": 1600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 83",
+   "frame": {
+    "x": 600,
+    "y": 1600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 84",
+   "frame": {
+    "x": 800,
+    "y": 1600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 85",
+   "frame": {
+    "x": 1000,
+    "y": 1600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 86",
+   "frame": {
+    "x": 1200,
+    "y": 1600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 87",
+   "frame": {
+    "x": 1400,
+    "y": 1600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 88",
+   "frame": {
+    "x": 1600,
+    "y": 1600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 89",
+   "frame": {
+    "x": 1800,
+    "y": 1600,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 90",
+   "frame": {
+    "x": 0,
+    "y": 1800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 91",
+   "frame": {
+    "x": 200,
+    "y": 1800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 92",
+   "frame": {
+    "x": 400,
+    "y": 1800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 93",
+   "frame": {
+    "x": 600,
+    "y": 1800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 94",
+   "frame": {
+    "x": 800,
+    "y": 1800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  },
+  {
+   "filename": "asteroid-boss 95",
+   "frame": {
+    "x": 1000,
+    "y": 1800,
+    "w": 200,
+    "h": 200
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 200
+   },
+   "sourceSize": {
+    "w": 200,
+    "h": 200
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "asteroid-boss.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 2000,
+   "h": 2000
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "asteroid-boss",
+    "from": 0,
+    "to": 95,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/asteroid-boss",
+   "name": "Giant asteroid",
+   "fps": 12,
+   "loop": true,
+   "frames": 96,
+   "frameSize": [
+    200,
+    200
+   ],
+   "pivot": [
+    100,
+    100
+   ],
+   "columns": 10
+  }
+ }
+}
