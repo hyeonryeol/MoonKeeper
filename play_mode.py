@@ -14,6 +14,8 @@ from moon import Moon
 from sheet import get_sheet
 from wave import Waves, LAST, REST
 
+# 스킬 팝업 왼쪽 위 자리, 웨이브 칸 바로 아래
+POPUP_X, POPUP_Y = 538, 562
 # 스킬은 얻은 순서대로 Q W E
 SKILL_KEYS = {SDLK_q: 0, SDLK_w: 1, SDLK_e: 2}
 
@@ -24,7 +26,7 @@ def need(level):
 
 
 def init():
-    global earth, moon, level, xp, pending, waves, clock
+    global earth, moon, level, xp, pending, waves, clock, popup
     common.load()
     game_world.clear()
     earth = Earth()
@@ -33,6 +35,8 @@ def init():
     game_world.add_object(moon, game_world.MOON)
     level, xp, pending = 1, 0, 0
     waves = Waves(earth, moon, gain_xp)
+    # 오른쪽 위 작은 스킬 팝업 그림 이름과 지난 시간
+    popup = None
     clock = 0.0
 
 
@@ -75,6 +79,9 @@ def use_skill(i):
     s = moon.skills[i]
     data = augment.AUGMENTS[s.key]
     if s.seen:
+        # 두 번째부터는 게임을 멈추지 않고 웨이브 칸 아래 작은 팝업만 띄우고 바로 스킬
+        global popup
+        popup = ['popup-' + s.key, 0.0]
         s.use()
         return
     s.seen = True
@@ -101,8 +108,13 @@ def handle_events():
 
 
 def update():
-    global clock
-    clock += game_framework.frame_time
+    global clock, popup
+    dt = game_framework.frame_time
+    clock += dt
+    if popup:
+        popup[1] += dt
+        if popup[1] >= get_sheet(popup[0]).duration():
+            popup = None
     game_world.update()
     waves.update()
     if pending > 0:
@@ -160,6 +172,8 @@ def draw_world():
     common.draw_background()
     game_world.render()
     draw_hud()
+    if popup:
+        get_sheet(popup[0]).draw(popup[1], POPUP_X, POPUP_Y)
 
 
 def render():
