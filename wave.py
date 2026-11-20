@@ -3,6 +3,7 @@ import random
 
 import game_framework
 import game_world
+import sound
 from asteroid import SmallAsteroid, MediumAsteroid, LargeAsteroid, Comet, cluster_at_edge
 
 # 웨이브 표, 작은 중간 혜성 군집 큰 소행성 수
@@ -46,6 +47,7 @@ class Rest:
 
 class Spawn:
     def enter(self, waves):
+        sound.play('wave_start')
         small, medium, comet, cluster, large = WAVES[waves.number - 1]
         waves.queue = ([SmallAsteroid] * small + [MediumAsteroid] * medium + [Comet] * comet +
                        ['cluster'] * cluster + [LargeAsteroid] * large)
