@@ -7,6 +7,7 @@ import augment
 import card_mode
 import common
 import cutin_mode
+import ending_mode
 import game_framework
 import game_world
 import guide_mode
@@ -168,11 +169,11 @@ def update():
 
 
 def end_game(cleared):
-    # 끝난 순간의 기록을 결과 화면용으로 남김
+    # 끝난 순간의 기록을 결과 화면용으로 남기고, 보스를 부쉈으면 끝 이야기부터
     stats = dict(wave=waves.number, last=LAST, time=clock, level=level,
                  kills=asteroid.destroyed, fragments=fragments, hp=earth.hp)
     result_mode.set_result(cleared, stats, moon)
-    game_framework.change_mode(result_mode)
+    game_framework.change_mode(ending_mode if cleared else result_mode)
 
 
 def bar(x, y, w, h, k, color):

@@ -15,6 +15,10 @@ SCENES = [
     ('intro-4', [(1.7, 4.4, '첫 번째 소행성이 지구에 떨어졌다.')]),
     ('intro-5', [(0.5, 3.3, '남은 건 달 하나. 멈춰 있던 달의 포탑이 다시 깨어났다.'), (3.6, 5.4, '당신은 달지기. 지구를 끝까지 지켜라.')]),
 ]
+# 보스를 부순 뒤의 끝 이야기
+ENDING = [
+    ('ending-1', [(0.8, 3.2, '거대 소행성이 산산이 부서졌다.'), (3.8, 6.7, '지구는 무사하다. 달지기가 지켜 냈다.')]),
+]
 # 맨 처음 글자 화면 길이, 연도가 한 글자씩 찍힘
 CARD = 3.0
 YEAR = '2187'
@@ -30,11 +34,14 @@ scene, time, typed = -1, 0.0, 0
 scenes = SCENES
 
 
-def reset():
+def reset(ending=False):
     global scene, time, typed, scenes
     scene, time, typed = -1, 0.0, 0
     sound.stop_all()
-    scenes = SCENES
+    scenes = ENDING if ending else SCENES
+    # 끝 이야기는 글자 화면 없이 바로 그림
+    if ending:
+        enter(0)
 
 
 def enter(n):
