@@ -106,6 +106,7 @@ class LaserTurret(Turret):
 
     def shoot(self, x, y, rad):
         game_world.add_object(Bullet(x, y, rad, 520, 1, 'laser-beam', 0.5), game_world.SHOT)
+        sound.play('laser')
 
 
 class MissilePod(Gear):
