@@ -1,6 +1,3 @@
-import math
-import random
-
 from pico2d import *
 
 import augment
@@ -9,15 +6,11 @@ import common
 import game_framework
 import game_world
 import sound
-from asteroid import SmallAsteroid, MediumAsteroid, LargeAsteroid, Comet, cluster_at_edge
 from common import W, H
 from earth import Earth
 from moon import Moon
 from sheet import get_sheet
-
-# 시험용으로 돌아가며 나오는 소행성 종류
-TEST_ORDER = [SmallAsteroid, SmallAsteroid, Comet, MediumAsteroid, SmallAsteroid, 'cluster', LargeAsteroid]
-
+from wave import Waves
 
 def need(level):
     # 레벨 n에서 다음 레벨까지 파편 5n개
@@ -25,16 +18,15 @@ def need(level):
 
 
 def init():
-    global earth, moon, spawn_timer, spawn_count, level, xp, pending, clock
+    global earth, moon, level, xp, pending, waves, clock
     common.load()
     game_world.clear()
     earth = Earth()
     game_world.add_object(earth, game_world.EARTH)
     moon = Moon(earth)
     game_world.add_object(moon, game_world.MOON)
-    spawn_timer = 1.0
-    spawn_count = 0
     level, xp, pending = 1, 0, 0
+    waves = Waves(earth, moon, gain_xp)
     clock = 0.0
 
 
@@ -81,27 +73,11 @@ def handle_events():
             moon.handle_event(event)
 
 
-def spawn():
-    global spawn_timer, spawn_count
-    spawn_timer -= game_framework.frame_time
-    if spawn_timer <= 0:
-        # 시험용으로 2초마다 화면 밖 아무 방향에서 하나씩, 종류를 돌아가며
-        kind = TEST_ORDER[spawn_count % len(TEST_ORDER)]
-        spawn_count += 1
-        angle = random.uniform(0, math.tau)
-        if kind == 'cluster':
-            group = cluster_at_edge(earth, moon, gain_xp, angle)
-        else:
-            group = [kind.at_edge(earth, moon, gain_xp, angle)]
-        game_world.add_objects(group, game_world.ENEMY)
-        spawn_timer = 2.0
-
-
 def update():
     global clock
     clock += game_framework.frame_time
     game_world.update()
-    spawn()
+    waves.update()
     if pending > 0:
         open_cards()
 
