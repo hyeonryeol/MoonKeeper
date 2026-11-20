@@ -67,6 +67,11 @@ class Moon:
                 return s
         return None
 
+    def jump(self):
+        # 궤도 점프는 같은 궤도의 지구 반대편으로 순간이동, 속도와 궤도는 그대로
+        self.theta += math.pi
+        self.place()
+
     def slow_at(self, x, y):
         # 중력 닻 범위 안의 소행성은 절반 속도
         anchor = self.gear('anchor')

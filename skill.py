@@ -1,5 +1,6 @@
 import math
 
+import effect
 import game_framework
 import game_world
 import sound
@@ -11,6 +12,8 @@ from sheet import get_sheet
 BEAM_MARGIN = 40
 # 지구 추진기 3레벨 속도
 SAFE_SPEED = 360
+# 궤도 점프 충격파 범위와 피해
+SHOCK_REACH, SHOCK_DAMAGE = 80, 2
 # 관통 레이저 갈래 사이 각도
 SPREAD = math.radians(25)
 
@@ -225,3 +228,37 @@ class GravityWell:
     def draw(self):
         # 그림은 반지름 48 기준이라 범위에 맞춰 키움
         self.sheet.draw(self.t, self.x, self.y, 0, self.reach / 48)
+
+
+class OrbitJump(Skill):
+    def cooldown(self):
+        return self.by_level([6, 5, 4])
+
+    def fire(self):
+        moon = self.moon
+        start = moon.x, moon.y
+        effect.play('orbit-jump', moon.x, moon.y)
+        moon.jump()
+        effect.play('orbit-jump', moon.x, moon.y)
+        # 2레벨은 도착한 자리, 3레벨은 떠난 자리까지 충격파
+        if self.level >= 2:
+            shockwave(moon.x, moon.y)
+        if self.level >= 3:
+            shockwave(*start)
+
+
+def shockwave(x, y):
+    # 둘레 소행성에 피해를 주고 가까울수록 멀리 밀어냄
+    # 궤도 점프와 같은 청록 워프 고리가 범위 끝까지 퍼짐
+    effect.play('jump-shock', x, y)
+    sound.play('jump_shock')
+    for a in game_world.objects_at(game_world.ENEMY)[:]:
+        dx, dy = a.x - x, a.y - y
+        d = math.hypot(dx, dy)
+        if d >= SHOCK_REACH:
+            continue
+        if d > 0:
+            push = (SHOCK_REACH - d) * 0.6
+            a.x += dx / d * push
+            a.y += dy / d * push
+        a.hit(SHOCK_DAMAGE)
