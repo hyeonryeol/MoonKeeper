@@ -100,3 +100,21 @@ class MediumAsteroid(SmallAsteroid):
             game_world.add_object(SmallAsteroid(self.earth, self.moon, self.on_collect,
                                                 self.x + math.cos(a) * 10, self.y + math.sin(a) * 10),
                                   game_world.ENEMY)
+
+
+class LargeAsteroid(MediumAsteroid):
+    radius = 18
+    speed = 32
+    max_hp = 10
+    damage = 25
+    fragments = 5
+    sheet_name = 'asteroid-large'
+
+    def destroy(self):
+        SmallAsteroid.destroy(self)
+        # 부서지면 중간 소행성 2개로 갈라짐
+        for i in range(2):
+            a = i * math.pi + random.uniform(-0.5, 0.5)
+            game_world.add_object(MediumAsteroid(self.earth, self.moon, self.on_collect,
+                                                 self.x + math.cos(a) * 14, self.y + math.sin(a) * 14),
+                                  game_world.ENEMY)

@@ -9,11 +9,14 @@ import common
 import game_framework
 import game_world
 import sound
-from asteroid import SmallAsteroid, MediumAsteroid
+from asteroid import SmallAsteroid, MediumAsteroid, LargeAsteroid
 from common import W, H
 from earth import Earth
 from moon import Moon
 from sheet import get_sheet
+
+# 시험용으로 돌아가며 나오는 소행성 종류
+TEST_ORDER = [SmallAsteroid, SmallAsteroid, MediumAsteroid, SmallAsteroid, LargeAsteroid]
 
 
 def need(level):
@@ -82,9 +85,9 @@ def spawn():
     global spawn_timer, spawn_count
     spawn_timer -= game_framework.frame_time
     if spawn_timer <= 0:
-        # 시험용으로 2초마다 화면 밖 아무 방향에서 하나씩, 네 번째마다 큰 소행성
+        # 시험용으로 2초마다 화면 밖 아무 방향에서 하나씩, 종류를 돌아가며
+        kind = TEST_ORDER[spawn_count % len(TEST_ORDER)]
         spawn_count += 1
-        kind = MediumAsteroid if spawn_count % 4 == 0 else SmallAsteroid
         game_world.add_object(kind.at_edge(earth, moon, gain_xp, random.uniform(0, math.tau)), game_world.ENEMY)
         spawn_timer = 2.0
 
