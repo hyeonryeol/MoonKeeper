@@ -10,6 +10,7 @@ import cutin_mode
 import game_framework
 import game_world
 import panels
+import pause_mode
 import result_mode
 import sound
 from common import W, H
@@ -115,7 +116,8 @@ def handle_events():
         if common.handle_common(event):
             pass
         elif event.type == SDL_KEYDOWN and event.key == SDLK_ESCAPE:
-            game_framework.quit()
+            game_framework.push_mode(pause_mode)
+            return
         elif event.type == SDL_KEYDOWN and event.key == SDLK_n:
             # 시험용 웨이브 건너뛰기
             waves.skip()
