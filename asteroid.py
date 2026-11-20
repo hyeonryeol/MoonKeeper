@@ -57,6 +57,7 @@ class SmallAsteroid:
         self.y += dy / d * speed * dt
         if d < earth.radius + self.radius:
             earth.hit(self.damage)
+            effect.play(self.boom_name, self.x, self.y)
             game_world.remove_object(self)
 
     def hit(self, damage):
