@@ -1,0 +1,303 @@
+{
+ "frames": [
+  {
+   "filename": "popup-boost 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-boost 1",
+   "frame": {
+    "x": 212,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-boost 2",
+   "frame": {
+    "x": 0,
+    "y": 52,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-boost 3",
+   "frame": {
+    "x": 212,
+    "y": 52,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-boost 4",
+   "frame": {
+    "x": 0,
+    "y": 104,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-boost 5",
+   "frame": {
+    "x": 212,
+    "y": 104,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-boost 6",
+   "frame": {
+    "x": 0,
+    "y": 156,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-boost 7",
+   "frame": {
+    "x": 212,
+    "y": 156,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-boost 8",
+   "frame": {
+    "x": 0,
+    "y": 208,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-boost 9",
+   "frame": {
+    "x": 212,
+    "y": 208,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-boost 10",
+   "frame": {
+    "x": 0,
+    "y": 260,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-boost 11",
+   "frame": {
+    "x": 212,
+    "y": 260,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "popup-boost.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 424,
+   "h": 312
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "popup-boost",
+    "from": 0,
+    "to": 11,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/popup-boost",
+   "name": "Pop-up: earth thruster",
+   "fps": 12,
+   "loop": false,
+   "frames": 12,
+   "frameSize": [
+    212,
+    52
+   ],
+   "pivot": [
+    0,
+    0
+   ],
+   "columns": 2
+  }
+ }
+}
