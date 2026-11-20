@@ -22,6 +22,7 @@ def set_result(win, record, the_moon):
 def init():
     global result_time
     result_time = 0.0
+    sound.music('clear' if cleared else 'gameover', False)
 
 
 def finish():
