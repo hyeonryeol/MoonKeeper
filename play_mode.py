@@ -3,6 +3,7 @@ from pico2d import *
 import augment
 import card_mode
 import common
+import cutin_mode
 import game_framework
 import game_world
 import panels
@@ -71,7 +72,14 @@ def open_cards():
 def use_skill(i):
     if i >= len(moon.skills) or not moon.skills[i].ready():
         return
-    moon.skills[i].use()
+    s = moon.skills[i]
+    data = augment.AUGMENTS[s.key]
+    if s.seen:
+        s.use()
+        return
+    s.seen = True
+    # 처음 쓸 때만 컷인을 띄우고 컷인이 끝나야 스킬이 나감
+    cutin_mode.start(data['cutin'], data['name'], augment.KIND_COLOR['스킬'], s.use)
 
 
 def handle_events():
