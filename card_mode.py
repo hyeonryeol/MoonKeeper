@@ -1,28 +1,23 @@
 from pico2d import *
 
 import augment
+import common
 import game_framework
 import play_mode
 import sound
+from common import W, H
 from gear import level_sheet
 
 # 레벨업 때 플레이 위에 띄우는 증강 카드 고르기, 고르는 동안 게임은 멈춤
-W, H = 800, 600
 CARD_W, CARD_H = 184, 260
 CARD_X = [200, 400, 600]
 CARD_Y = 290
 
 cards = []
-font = None
-big_font = None
 
 
 def init():
-    global font, big_font
-    # 갈무리 도트 글꼴, 작은 글자는 Galmuri14 15px 큰 글자는 Galmuri11 Bold
-    if font is None:
-        font = load_font('res/fonts/Galmuri14.ttf', 15)
-        big_font = load_font('res/fonts/Galmuri11-Bold.ttf', 24)
+    pass
 
 
 def finish():
@@ -77,7 +72,7 @@ def update():
 
 
 def draw_cards():
-    moon = play_mode.moon
+    font, big_font, moon = common.font, common.big_font, play_mode.moon
     draw_rectangle(0, 0, W, H, 7, 11, 31, 170, True)
     big_font.draw(W / 2 - 70, 500, '레벨 업!', (232, 197, 71))
     font.draw(W / 2 - 120, 460, '1 2 3 키나 클릭으로 하나 고르기', (201, 204, 224))
@@ -99,7 +94,7 @@ def draw_cards():
 
 
 def render():
-    clear_canvas()
+    common.begin()
     play_mode.draw_world()
     draw_cards()
-    update_canvas()
+    common.end()
