@@ -26,7 +26,7 @@ def need(level):
 
 
 def init():
-    global earth, moon, level, xp, pending, waves, clock, popup
+    global earth, moon, level, xp, pending, waves, clock, popup, boss_cut
     common.load()
     game_world.clear()
     earth = Earth()
@@ -37,6 +37,7 @@ def init():
     waves = Waves(earth, moon, gain_xp)
     # 오른쪽 위 작은 스킬 팝업 그림 이름과 지난 시간
     popup = None
+    boss_cut = False
     clock = 0.0
 
 
@@ -108,7 +109,7 @@ def handle_events():
 
 
 def update():
-    global clock, popup
+    global clock, popup, boss_cut
     dt = game_framework.frame_time
     clock += dt
     if popup:
@@ -117,7 +118,12 @@ def update():
             popup = None
     game_world.update()
     waves.update()
-    if pending > 0:
+    if waves.boss and not boss_cut:
+        # 보스가 나오는 순간 한 번 보스 컷인
+        boss_cut = True
+        # 화면 전체 컷인이라 제목은 소행성과 지구 사이에
+        cutin_mode.start('cutin-boss', '거대 소행성 접근', (242, 133, 74), None, 215, 1.85, 'boss_cutin')
+    elif pending > 0:
         open_cards()
 
 
