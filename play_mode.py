@@ -5,15 +5,15 @@ from pico2d import *
 
 import augment
 import card_mode
+import common
 import game_framework
 import game_world
 import sound
 from asteroid import SmallAsteroid, BigAsteroid
+from common import W, H
 from earth import Earth
 from moon import Moon
 from sheet import get_sheet
-
-W, H = 800, 600
 
 
 def need(level):
@@ -22,11 +22,9 @@ def need(level):
 
 
 def init():
-    global background, earth, moon, spawn_timer, spawn_count, level, xp, pending, clock
+    global earth, moon, spawn_timer, spawn_count, level, xp, pending, clock
+    common.load()
     game_world.clear()
-    # 소리가 많이 겹쳐도 끊기지 않게 채널을 넉넉히
-    sound.init()
-    background = load_image('res/background.png')
     earth = Earth()
     game_world.add_object(earth, game_world.EARTH)
     moon = Moon(earth)
@@ -129,12 +127,12 @@ def draw_hud():
 
 def draw_world():
     # 플레이 화면, 위에 띄우는 카드 모드도 이것부터 그림
-    background.draw(W / 2, H / 2, W, H)
+    common.draw_background()
     game_world.render()
     draw_hud()
 
 
 def render():
-    clear_canvas()
+    common.begin()
     draw_world()
-    update_canvas()
+    common.end()
