@@ -5,6 +5,8 @@ from skill import PierceLaser
 
 MAX_LEVEL = 3
 MAX_SKILLS = 3
+# 이 레벨 전까지는 장비 카드만 나옴
+SKILL_LEVEL = 5
 SKILL_KEYS = 'QWE'
 
 # 가시 갑옷과 추진기는 따로 하는 일 없이 달이 가지고 있는지만 봄
@@ -66,9 +68,9 @@ def describe(moon, key):
     return up if isinstance(up, list) else [up]
 
 
-def roll(moon, n=3):
+def roll(moon, level, n=3):
     # 아직 더 올릴 수 있는 증강 중에서 뽑음
-    keys = [k for k in AUGMENTS if can_take(moon, k)]
+    keys = [k for k in AUGMENTS if can_take(moon, k) and (level >= SKILL_LEVEL or not is_skill(k))]
     return random.sample(keys, min(n, len(keys)))
 
 
