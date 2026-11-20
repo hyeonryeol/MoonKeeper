@@ -3,10 +3,14 @@ import math
 import game_framework
 import game_world
 import sound
+from earth import MARGIN
+from gear import nearest_enemy
 from sheet import get_sheet
 
 # 관통 레이저는 화면 끝까지, 막 들어오는 적도 맞게 화면 밖 여유
 BEAM_MARGIN = 40
+# 지구 추진기 3레벨 속도
+SAFE_SPEED = 360
 # 관통 레이저 갈래 사이 각도
 SPREAD = math.radians(25)
 
@@ -129,3 +133,36 @@ class PierceBeam:
         if length < 2 or thick <= 0.05:
             return
         self.sheet.draw(self.t, self.moon.x, self.moon.y, self.rad, thick, length / (32 * thick))
+
+
+class EarthBoost(Skill):
+    def cooldown(self):
+        return self.by_level([20, 17, 14])
+
+    def fire(self):
+        earth = self.moon.earth
+        if self.level >= 3:
+            # 3레벨은 화면에서 소행성이 가장 먼 곳까지 빠르게 날아감
+            earth.boost_to(*self.safest(), SAFE_SPEED)
+            return
+        target = nearest_enemy(earth.x, earth.y, 1000)
+        if target is None:
+            rad = self.moon.theta + math.pi
+        else:
+            rad = math.atan2(earth.y - target.y, earth.x - target.x)
+        # 2레벨은 두 배 멀리
+        earth.boost(rad, self.by_level([1.0, 2.0]))
+
+    def safest(self):
+        # 화면을 40칸 간격으로 훑어 가장 가까운 소행성이 제일 먼 자리를 고름
+        earth = self.moon.earth
+        enemies = game_world.objects_at(game_world.ENEMY)
+        if not enemies:
+            return earth.x, earth.y
+        best, best_d = (earth.x, earth.y), -1
+        for x in range(MARGIN, 800 - MARGIN + 1, 40):
+            for y in range(MARGIN, 600 - MARGIN + 1, 40):
+                d = min(math.hypot(a.x - x, a.y - y) for a in enemies)
+                if d > best_d:
+                    best, best_d = (x, y), d
+        return best
