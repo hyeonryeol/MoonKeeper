@@ -24,6 +24,7 @@ class Moon:
         self.pickup_radius = 18
         self.right = self.left = False
         self.gears = []
+        self.skills = []
         self.t = 0.0
         # 실제 궤도 반지름, 속도가 갑자기 바뀌어도 이 값은 천천히 따라감
         self.orbit = self.orbit_radius()
@@ -58,6 +59,12 @@ class Moon:
         for g in self.gears:
             if g.key == key:
                 return g
+        return None
+
+    def skill(self, key):
+        for s in self.skills:
+            if s.key == key:
+                return s
         return None
 
     def slow_at(self, x, y):
@@ -116,6 +123,8 @@ class Moon:
                 self.ram(a)
         for g in self.gears:
             g.update()
+        for s in self.skills:
+            s.update()
 
     def draw(self):
         self.sheet.draw(self.t, self.x, self.y)

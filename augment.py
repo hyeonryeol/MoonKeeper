@@ -1,6 +1,11 @@
 import random
 
 from gear import Gear, LaserTurret, MissilePod, Drone, Coil, Shield, Anchor
+from skill import PierceLaser
+
+MAX_LEVEL = 3
+MAX_SKILLS = 3
+SKILL_KEYS = 'QWE'
 
 # 가시 갑옷과 추진기는 따로 하는 일 없이 달이 가지고 있는지만 봄
 AUGMENTS = {
@@ -12,10 +17,10 @@ AUGMENTS = {
     'anchor': dict(name='중력 닻', kind='방어', desc=['주변 소행성', '속도 50%'], sheet='gear-anchor', cls=Anchor),
     'spikes': dict(name='가시 갑옷', kind='방어', desc=['들이받아도', '감속 없음'], sheet='gear-spikes', cls=Gear),
     'thruster': dict(name='추진기', kind='방어', desc=['무게 영향', '절반'], sheet='gear-thruster', cls=Gear),
+    'pierce': dict(name='관통 레이저', kind='스킬', desc=['적이 많은 쪽으로', '일직선 빔 피해 3', '재사용 8초'], sheet='laser-beam', cutin='cutin-laser-long', cls=PierceLaser),
 }
 
-# 같은 증강을 다시 고를 때 카드에 보여줄 강화 내용, 레벨 2와 3
-MAX_LEVEL = 3
+# 같은 증강을 다시 고를 때 카드에 보여줄 강화 내용
 UPGRADES = {
     'laser': [['사거리 170', '연사 0.2초'], ['사거리 190', '연사 0.15초']],
     'missile': ['한 번에 3발', '한 번에 4발'],
@@ -25,14 +30,31 @@ UPGRADES = {
     'anchor': ['범위 110', '범위 130'],
     'spikes': ['들이받기 피해 3', '들이받기 피해 4'],
     'thruster': ['무게 영향 1/3', '무게 영향 1/4'],
+    'pierce': [['3갈래 피해 4', '재사용 7초'], ['5갈래 피해 5', '재사용 6초']],
 }
 
-KIND_COLOR = {'무기': (242, 133, 74), '방어': (95, 212, 224)}
+KIND_COLOR = {'무기': (242, 133, 74), '방어': (95, 212, 224), '스킬': (232, 197, 71)}
+
+
+def is_skill(key):
+    return AUGMENTS[key]['kind'] == '스킬'
+
+
+def owned(moon, key):
+    return moon.skill(key) if is_skill(key) else moon.gear(key)
 
 
 def level_of(moon, key):
-    g = moon.gear(key)
+    g = owned(moon, key)
     return g.level if g else 0
+
+
+def can_take(moon, key):
+    lv = level_of(moon, key)
+    # 스킬 칸은 Q W E 세 개뿐
+    if lv == 0 and is_skill(key):
+        return len(moon.skills) < MAX_SKILLS
+    return lv < MAX_LEVEL
 
 
 def describe(moon, key):
@@ -45,16 +67,19 @@ def describe(moon, key):
 
 
 def roll(moon, n=3):
-    # 아직 Lv 3이 안 된 증강 중에서 뽑음
-    keys = [k for k in AUGMENTS if level_of(moon, k) < MAX_LEVEL]
+    # 아직 더 올릴 수 있는 증강 중에서 뽑음
+    keys = [k for k in AUGMENTS if can_take(moon, k)]
     return random.sample(keys, min(n, len(keys)))
 
 
 def apply(moon, key):
-    # 이미 단 장비면 강화, 처음이면 새로 닮
-    g = moon.gear(key)
+    # 이미 달았으면 강화, 처음이면 새로 닮
+    g = owned(moon, key)
     if g:
         g.level += 1
         return
     data = AUGMENTS[key]
+    if is_skill(key):
+        moon.skills.append(data['cls'](moon, key))
+        return
     moon.gears.append(data['cls'](moon, key, data['sheet'], len(moon.gears)))

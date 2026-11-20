@@ -12,6 +12,10 @@ from moon import Moon
 from sheet import get_sheet
 from wave import Waves, LAST, REST
 
+# 스킬은 얻은 순서대로 Q W E
+SKILL_KEYS = {SDLK_q: 0, SDLK_w: 1, SDLK_e: 2}
+
+
 def need(level):
     # 레벨 n에서 다음 레벨까지 파편 5n개
     return 5 * level
@@ -63,6 +67,12 @@ def open_cards():
         game_framework.push_mode(card_mode)
 
 
+def use_skill(i):
+    if i >= len(moon.skills) or not moon.skills[i].ready():
+        return
+    moon.skills[i].use()
+
+
 def handle_events():
     for event in get_events():
         if common.handle_common(event):
@@ -75,6 +85,8 @@ def handle_events():
         elif event.type == SDL_KEYDOWN and event.key == SDLK_l:
             # 시험용 바로 레벨업, 다음 레벨까지 모자란 파편만큼 채움
             gain_xp(need(level) - xp)
+        elif event.type == SDL_KEYDOWN and event.key in SKILL_KEYS:
+            use_skill(SKILL_KEYS[event.key])
         else:
             moon.handle_event(event)
 
