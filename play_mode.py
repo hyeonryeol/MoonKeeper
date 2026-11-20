@@ -7,6 +7,7 @@ import augment
 import card_mode
 import game_framework
 import game_world
+import sound
 from asteroid import SmallAsteroid, BigAsteroid
 from earth import Earth
 from moon import Moon
@@ -23,6 +24,8 @@ def need(level):
 def init():
     global background, earth, moon, spawn_timer, spawn_count, level, xp, pending, clock
     game_world.clear()
+    # 소리가 많이 겹쳐도 끊기지 않게 채널을 넉넉히
+    sound.init()
     background = load_image('res/background.png')
     earth = Earth()
     game_world.add_object(earth, game_world.EARTH)
