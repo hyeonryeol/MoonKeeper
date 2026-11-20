@@ -1,0 +1,303 @@
+{
+ "frames": [
+  {
+   "filename": "popup-pierce 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-pierce 1",
+   "frame": {
+    "x": 212,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-pierce 2",
+   "frame": {
+    "x": 0,
+    "y": 52,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-pierce 3",
+   "frame": {
+    "x": 212,
+    "y": 52,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-pierce 4",
+   "frame": {
+    "x": 0,
+    "y": 104,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-pierce 5",
+   "frame": {
+    "x": 212,
+    "y": 104,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-pierce 6",
+   "frame": {
+    "x": 0,
+    "y": 156,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-pierce 7",
+   "frame": {
+    "x": 212,
+    "y": 156,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-pierce 8",
+   "frame": {
+    "x": 0,
+    "y": 208,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-pierce 9",
+   "frame": {
+    "x": 212,
+    "y": 208,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-pierce 10",
+   "frame": {
+    "x": 0,
+    "y": 260,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-pierce 11",
+   "frame": {
+    "x": 212,
+    "y": 260,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "popup-pierce.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 424,
+   "h": 312
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "popup-pierce",
+    "from": 0,
+    "to": 11,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/popup-pierce",
+   "name": "Pop-up: piercing laser",
+   "fps": 12,
+   "loop": false,
+   "frames": 12,
+   "frameSize": [
+    212,
+    52
+   ],
+   "pivot": [
+    0,
+    0
+   ],
+   "columns": 2
+  }
+ }
+}
