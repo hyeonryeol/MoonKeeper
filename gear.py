@@ -179,6 +179,7 @@ class DroneUnit:
             self.fly_to(self.target.x, self.target.y, dt)
             if math.hypot(self.target.x - self.x, self.target.y - self.y) < self.target.radius + self.radius:
                 self.target.hit(1)
+                sound.play('drone')
                 self.state = 'return'
         elif self.state == 'return':
             self.target = None
