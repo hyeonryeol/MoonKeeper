@@ -51,12 +51,10 @@ def pick(i):
 
 def handle_events():
     for event in get_events():
-        if event.type == SDL_QUIT:
-            game_framework.quit()
-        elif event.type == SDL_KEYDOWN and event.key == SDLK_ESCAPE:
-            game_framework.quit()
+        if common.handle_common(event):
+            continue
         # 모드가 바뀌면 남은 입력은 여기서 처리하지 않음
-        elif event.type == SDL_KEYDOWN and event.key in (SDLK_1, SDLK_2, SDLK_3):
+        if event.type == SDL_KEYDOWN and event.key in (SDLK_1, SDLK_2, SDLK_3):
             if pick(event.key - SDLK_1):
                 return
         elif event.type == SDL_MOUSEBUTTONDOWN:

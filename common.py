@@ -7,13 +7,14 @@ from sdl2 import (SDL_BLENDMODE_BLEND, SDL_CreateTexture, SDL_PIXELFORMAT_RGBA88
 import game_framework
 import sound
 
-# 모든 모드가 같이 쓰는 화면 크기, 글꼴, 배경, 그림판
+# 모든 모드가 같이 쓰는 화면 크기, 글꼴, 배경, 그림판, 공통 키
 W, H = 800, 600
 
 font = None
 big_font = None
 background = None
 screen = None
+fullscreen = False
 
 
 def load():
@@ -57,3 +58,20 @@ def end():
 def draw_background():
     background.draw(W / 2, H / 2, W, H)
 
+
+
+def toggle_fullscreen():
+    global fullscreen
+    fullscreen = not fullscreen
+    SDL_SetWindowFullscreen(canvas.window, SDL_WINDOW_FULLSCREEN_DESKTOP if fullscreen else 0)
+
+
+def handle_common(event):
+    # 어느 모드에서나 같은 키, 처리했으면 True
+    if event.type == SDL_QUIT:
+        game_framework.quit()
+    elif event.type == SDL_KEYDOWN and event.key == SDLK_F11:
+        toggle_fullscreen()
+    else:
+        return False
+    return True
