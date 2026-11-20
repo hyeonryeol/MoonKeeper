@@ -79,7 +79,7 @@ def use_skill(i):
         return
     s.seen = True
     # 처음 쓸 때만 컷인을 띄우고 컷인이 끝나야 스킬이 나감
-    cutin_mode.start(data['cutin'], data['name'], augment.KIND_COLOR['스킬'], s.use)
+    cutin_mode.start(data['cutin'], data['name'], augment.KIND_COLOR['스킬'], s.use, sfx='cutin_' + s.key)
 
 
 def handle_events():
