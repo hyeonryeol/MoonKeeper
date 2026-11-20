@@ -1,4 +1,5 @@
 import game_framework
+import sound
 from sheet import get_sheet
 
 
@@ -13,6 +14,7 @@ class Earth:
 
     def hit(self, damage):
         self.hp = max(0, self.hp - damage)
+        sound.play('earth_hit')
 
     def update(self):
         dt = game_framework.frame_time
