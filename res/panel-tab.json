@@ -1,0 +1,61 @@
+{
+ "frames": [
+  {
+   "filename": "panel-tab 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 100,
+    "h": 172
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 100,
+    "h": 172
+   },
+   "sourceSize": {
+    "w": 100,
+    "h": 172
+   },
+   "duration": 1000
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "panel-tab.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 100,
+   "h": 172
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "panel-tab",
+    "from": 0,
+    "to": 0,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/panel-tab",
+   "name": "Gear panel",
+   "fps": 1,
+   "loop": true,
+   "frames": 1,
+   "frameSize": [
+    100,
+    172
+   ],
+   "pivot": [
+    0,
+    0
+   ],
+   "columns": 1
+  }
+ }
+}
