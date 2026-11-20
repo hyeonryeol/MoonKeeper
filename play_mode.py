@@ -24,6 +24,9 @@ POPUP_X, POPUP_Y = 538, 562
 # 스킬은 얻은 순서대로 Q W E
 SKILL_KEYS = {SDLK_q: 0, SDLK_w: 1, SDLK_e: 2}
 
+# Tab을 누르고 있는 동안 장비 패널을 띄움
+show_gears = False
+
 
 def start():
     # 다른 모드에서 플레이로 들어올 때, 선택 소리는 앞 모드가 끝난 뒤에 남
@@ -37,7 +40,7 @@ def need(level):
 
 
 def init():
-    global earth, moon, level, xp, pending, waves, clock, popup, boss_cut, fragments
+    global earth, moon, level, xp, pending, waves, clock, popup, boss_cut, fragments, show_gears
     common.load()
     game_world.clear()
     earth = Earth()
@@ -46,6 +49,7 @@ def init():
     game_world.add_object(moon, game_world.MOON)
     level, xp, pending = 1, 0, 0
     fragments = 0
+    show_gears = False
     asteroid.destroyed = 0
     waves = Waves(earth, moon, gain_xp)
     sound.music('battle')
@@ -112,8 +116,11 @@ def skill_done(s):
 
 
 def handle_events():
+    global show_gears
     for event in get_events():
-        if common.handle_common(event):
+        if event.type in (SDL_KEYDOWN, SDL_KEYUP) and event.key == SDLK_TAB:
+            show_gears = event.type == SDL_KEYDOWN
+        elif common.handle_common(event):
             pass
         elif event.type == SDL_KEYDOWN and event.key == SDLK_ESCAPE:
             game_framework.push_mode(pause_mode)
@@ -226,4 +233,6 @@ def draw_world():
 def render():
     common.begin()
     draw_world()
+    if show_gears:
+        panels.draw(moon, common.font, clock)
     common.end()
