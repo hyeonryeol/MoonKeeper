@@ -1,0 +1,303 @@
+{
+ "frames": [
+  {
+   "filename": "popup-jump 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-jump 1",
+   "frame": {
+    "x": 212,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-jump 2",
+   "frame": {
+    "x": 0,
+    "y": 52,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-jump 3",
+   "frame": {
+    "x": 212,
+    "y": 52,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-jump 4",
+   "frame": {
+    "x": 0,
+    "y": 104,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-jump 5",
+   "frame": {
+    "x": 212,
+    "y": 104,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-jump 6",
+   "frame": {
+    "x": 0,
+    "y": 156,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-jump 7",
+   "frame": {
+    "x": 212,
+    "y": 156,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-jump 8",
+   "frame": {
+    "x": 0,
+    "y": 208,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-jump 9",
+   "frame": {
+    "x": 212,
+    "y": 208,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-jump 10",
+   "frame": {
+    "x": 0,
+    "y": 260,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  },
+  {
+   "filename": "popup-jump 11",
+   "frame": {
+    "x": 212,
+    "y": 260,
+    "w": 212,
+    "h": 52
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 212,
+    "h": 52
+   },
+   "sourceSize": {
+    "w": 212,
+    "h": 52
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "popup-jump.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 424,
+   "h": 312
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "popup-jump",
+    "from": 0,
+    "to": 11,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/popup-jump",
+   "name": "Pop-up: orbit jump",
+   "fps": 12,
+   "loop": false,
+   "frames": 12,
+   "frameSize": [
+    212,
+    52
+   ],
+   "pivot": [
+    0,
+    0
+   ],
+   "columns": 2
+  }
+ }
+}
