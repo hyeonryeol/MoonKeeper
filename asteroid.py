@@ -80,7 +80,8 @@ class SmallAsteroid:
         self.sheet.draw(self.t, self.x, self.y)
 
 
-class BigAsteroid(SmallAsteroid):
+class MediumAsteroid(SmallAsteroid):
+    # 예전 큰 소행성, 그림 이름은 그대로 asteroid-big
     radius = 11
     speed = 40
     max_hp = 4

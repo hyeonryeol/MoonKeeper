@@ -9,7 +9,7 @@ import common
 import game_framework
 import game_world
 import sound
-from asteroid import SmallAsteroid, BigAsteroid
+from asteroid import SmallAsteroid, MediumAsteroid
 from common import W, H
 from earth import Earth
 from moon import Moon
@@ -84,7 +84,7 @@ def spawn():
     if spawn_timer <= 0:
         # 시험용으로 2초마다 화면 밖 아무 방향에서 하나씩, 네 번째마다 큰 소행성
         spawn_count += 1
-        kind = BigAsteroid if spawn_count % 4 == 0 else SmallAsteroid
+        kind = MediumAsteroid if spawn_count % 4 == 0 else SmallAsteroid
         game_world.add_object(kind.at_edge(earth, moon, gain_xp, random.uniform(0, math.tau)), game_world.ENEMY)
         spawn_timer = 2.0
 
