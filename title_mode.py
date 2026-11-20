@@ -12,6 +12,7 @@ title_time = 0.0
 def init():
     global title_time
     common.load()
+    sound.music('title')
     title_time = 0.0
 
 
