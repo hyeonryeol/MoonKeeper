@@ -87,8 +87,14 @@ def use_skill(i):
         s.use()
         return
     s.seen = True
-    # 처음 쓸 때만 컷인을 띄우고 컷인이 끝나야 스킬이 나감
-    cutin_mode.start(data['cutin'], data['name'], augment.KIND_COLOR['스킬'], s.use, sfx='cutin_' + s.key)
+    # 처음에는 컷인이 끝나야 스킬이 나감, 컷인 동안 배경음을 멈추고 끝나면 멈춘 자리부터 이어서
+    sound.pause_music()
+    cutin_mode.start(data['cutin'], data['name'], augment.KIND_COLOR['스킬'], lambda: skill_done(s), sfx='cutin_' + s.key)
+
+
+def skill_done(s):
+    sound.resume_music()
+    s.use()
 
 
 def handle_events():
