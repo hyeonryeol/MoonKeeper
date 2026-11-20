@@ -1,0 +1,303 @@
+{
+ "frames": [
+  {
+   "filename": "comet 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 60,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "comet 1",
+   "frame": {
+    "x": 60,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 60,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "comet 2",
+   "frame": {
+    "x": 120,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 60,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "comet 3",
+   "frame": {
+    "x": 0,
+    "y": 24,
+    "w": 60,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 60,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "comet 4",
+   "frame": {
+    "x": 60,
+    "y": 24,
+    "w": 60,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 60,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "comet 5",
+   "frame": {
+    "x": 120,
+    "y": 24,
+    "w": 60,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 60,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "comet 6",
+   "frame": {
+    "x": 0,
+    "y": 48,
+    "w": 60,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 60,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "comet 7",
+   "frame": {
+    "x": 60,
+    "y": 48,
+    "w": 60,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 60,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "comet 8",
+   "frame": {
+    "x": 120,
+    "y": 48,
+    "w": 60,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 60,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "comet 9",
+   "frame": {
+    "x": 0,
+    "y": 72,
+    "w": 60,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 60,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "comet 10",
+   "frame": {
+    "x": 60,
+    "y": 72,
+    "w": 60,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 60,
+    "h": 24
+   },
+   "duration": 83
+  },
+  {
+   "filename": "comet 11",
+   "frame": {
+    "x": 120,
+    "y": 72,
+    "w": 60,
+    "h": 24
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 60,
+    "h": 24
+   },
+   "sourceSize": {
+    "w": 60,
+    "h": 24
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "comet.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 180,
+   "h": 96
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "comet",
+    "from": 0,
+    "to": 11,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/comet",
+   "name": "Comet",
+   "fps": 12,
+   "loop": true,
+   "frames": 12,
+   "frameSize": [
+    60,
+    24
+   ],
+   "pivot": [
+    52,
+    12
+   ],
+   "columns": 3
+  }
+ }
+}
