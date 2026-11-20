@@ -16,6 +16,9 @@ class Earth:
         self.hp = max(0, self.hp - damage)
         sound.play('earth_hit')
 
+    def heal(self, amount):
+        self.hp = min(self.max_hp, self.hp + amount)
+
     def update(self):
         dt = game_framework.frame_time
         self.t += dt

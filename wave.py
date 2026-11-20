@@ -21,6 +21,8 @@ WAVES = [
 ]
 LAST = len(WAVES) + 1
 REST = 3.0
+# 웨이브를 막아 내면 지구 HP 회복
+HEAL = 10
 
 
 def duration(n):
@@ -59,6 +61,7 @@ class Spawn:
             waves.timer = waves.gap
         # 다 나오고 화면의 적을 다 부수면 웨이브 끝
         if not waves.queue and not game_world.objects_at(game_world.ENEMY):
+            waves.earth.heal(HEAL)
             waves.number += 1
             waves.fire('wave_cleared')
 
