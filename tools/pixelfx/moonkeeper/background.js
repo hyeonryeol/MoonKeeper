@@ -3,7 +3,9 @@ import { fbm, rand, fit, clamp, hex, mix } from "../../core/index.js";
 export const meta = {
   name: "Space background", desc: "The playfield backdrop at half size, drawn 2x to fill 800 x 600: deep navy space, faint violet and teal nebula, stars of three sizes.",
   tags: ["moonkeeper", "background"], size: [400, 300], origin: [0, 0], duration: 1, loop: true, fps: 1, bg: "dark",
-  options: { palette: ["#070b1f", "#0e1330", "#161d44", "#2a2a5c", "#3a4580"], nebula: ["#3b2370", "#1f5a6e"], seed: 11 },
+  options: { palette: ["#070b1f", "#0e1330", "#161d44", "#2a2a5c", "#3a4580"], nebula: ["#3b2370", "#1f5a6e"], seed: 11,
+    // 소행성과 파편이 잘 보이게 성운은 옅게 별은 적고 어둡게, 밝은 별은 전장 밖 가장자리에만
+    nebulaK: 0.35, starK: 0.5, bright: 10, dim: 0.4, darken: 0.15, edgeOnly: true },
 };
 
 export function draw(p, t, o) {
@@ -15,16 +17,20 @@ export function draw(p, t, o) {
     const q = (k) => clamp(Math.round(k * 4 + B * 4) / 4);
     let c = mix(C[0], C[1], q(0.5 + n1 * 0.9));
     const v = q(clamp((n1 - 0.08) * 2.4)), te = q(clamp((n2 - 0.15) * 2.2));
-    if (v > 0) c = mix(c, N[0], v * 0.45);
-    if (te > 0) c = mix(c, N[1], te * 0.35);
+    const nk = o.nebulaK ?? 1, sk = o.starK ?? 1;
+    if (v > 0) c = mix(c, N[0], v * 0.45 * nk);
+    if (te > 0) c = mix(c, N[1], te * 0.35 * nk);
+    if (o.darken) c = mix(c, hex("#03050f"), o.darken);
     const s = rand(x, y, o.seed);
-    if (s < 0.003) return star[0];
-    if (s < 0.0042) return star[1];
+    if (s < 0.003 * sk) return o.dim ? mix(star[0], C[0], o.dim) : star[0];
+    if (s < 0.0042 * sk) return o.dim ? mix(star[1], C[0], o.dim) : star[1];
     return c;
   });
   // a few bright stars with a cross glint
-  for (let i = 0; i < 14; i++) {
+  for (let i = 0; i < (o.bright ?? 14); i++) {
     const x = Math.floor(rand(i, 1, o.seed) * 400), y = Math.floor(rand(i, 2, o.seed) * 300);
+    // edgeOnly 면 전장 가운데는 비우고 가장자리에만 밝은 별
+    if (o.edgeOnly && Math.hypot(x - 200, (y - 150) * 1.33) < 150) continue;
     p.px(x, y, star[2]);
     if (i % 3 === 0) { p.px(x - 1, y, star[1]); p.px(x + 1, y, star[1]); p.px(x, y - 1, star[1]); p.px(x, y + 1, star[1]); }
     p.glow(x, y, 4, star[1], 0.25);
