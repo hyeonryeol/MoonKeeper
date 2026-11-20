@@ -2,8 +2,10 @@ import math
 
 from pico2d import SDL_KEYDOWN, SDL_KEYUP, SDLK_LEFT, SDLK_RIGHT, clamp
 
+import effect
 import game_framework
 import game_world
+import sound
 from gear import Turret
 from sheet import get_sheet
 
@@ -92,6 +94,8 @@ class Moon:
         # 가시 갑옷이 있으면 피해가 레벨마다 2 3 4에 감속 없음
         spikes = self.gear('spikes')
         a.hit(1 + (spikes.level if spikes else 0))
+        effect.play('explosion-small', (self.x + a.x) / 2, (self.y + a.y) / 2)
+        sound.play('ram')
         if not spikes:
             self.speed = max(MIN_SPEED, self.speed / 2)
 
