@@ -9,14 +9,14 @@ import common
 import game_framework
 import game_world
 import sound
-from asteroid import SmallAsteroid, MediumAsteroid, LargeAsteroid, cluster_at_edge
+from asteroid import SmallAsteroid, MediumAsteroid, LargeAsteroid, Comet, cluster_at_edge
 from common import W, H
 from earth import Earth
 from moon import Moon
 from sheet import get_sheet
 
 # 시험용으로 돌아가며 나오는 소행성 종류
-TEST_ORDER = [SmallAsteroid, SmallAsteroid, MediumAsteroid, SmallAsteroid, 'cluster', LargeAsteroid]
+TEST_ORDER = [SmallAsteroid, SmallAsteroid, Comet, MediumAsteroid, SmallAsteroid, 'cluster', LargeAsteroid]
 
 
 def need(level):

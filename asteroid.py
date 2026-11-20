@@ -128,3 +128,38 @@ def cluster_at_edge(earth, moon, on_collect, angle):
         a = i * math.tau / 4 + random.uniform(-0.3, 0.3)
         group.append(SmallAsteroid(earth, moon, on_collect, lead.x + math.cos(a) * 14, lead.y + math.sin(a) * 14))
     return group
+
+
+class Comet(SmallAsteroid):
+    radius = 5
+    speed = 120
+    max_hp = 2
+    damage = 10
+    fragments = 2
+    sheet_name = 'comet'
+    # 멀리 있을수록 옆으로 크게 휘어 들어옴
+    curve = 0.9
+
+    def __init__(self, earth, moon, on_collect, x, y):
+        super().__init__(earth, moon, on_collect, x, y)
+        self.side = random.choice((-1, 1))
+        self.rad = 0.0
+
+    def update(self):
+        dt = game_framework.frame_time
+        self.t += dt
+        self.ram_cool -= dt
+        earth = self.earth
+        dx, dy = earth.x - self.x, earth.y - self.y
+        d = math.hypot(dx, dy)
+        self.rad = math.atan2(dy, dx) + self.side * self.curve * min(1.0, d / SPAWN_DISTANCE)
+        speed = self.speed * self.moon.slow_at(self.x, self.y)
+        self.x += math.cos(self.rad) * speed * dt
+        self.y += math.sin(self.rad) * speed * dt
+        if d < earth.radius + self.radius:
+            earth.hit(self.damage)
+            effect.play(self.boom_name, self.x, self.y)
+            game_world.remove_object(self)
+
+    def draw(self):
+        self.sheet.draw(self.t, self.x, self.y, self.rad)
