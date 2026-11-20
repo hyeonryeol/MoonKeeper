@@ -3,6 +3,7 @@ from pico2d import *
 import augment
 import game_framework
 import play_mode
+import sound
 from gear import level_sheet
 
 # 레벨업 때 플레이 위에 띄우는 증강 카드 고르기, 고르는 동안 게임은 멈춤
@@ -48,6 +49,7 @@ def pick(i):
     if not 0 <= i < len(cards):
         return False
     augment.apply(play_mode.moon, cards[i])
+    sound.play('card_pick')
     game_framework.pop_mode()
     return True
 
