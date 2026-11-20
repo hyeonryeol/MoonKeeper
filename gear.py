@@ -233,6 +233,7 @@ class Coil(Gear):
             hit.append(target)
             x, y = target.x, target.y
             target = nearest_enemy(x, y, 80, hit)
+        sound.play('coil')
         for a in hit:
             a.hit(1)
         self.cool = 1.2
