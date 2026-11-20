@@ -63,6 +63,7 @@ def open_cards():
     global pending
     cards = augment.roll(moon)
     pending -= 1
+    sound.play('levelup')
     # 더 고를 카드가 없으면 그냥 계속, 있으면 카드 모드를 위에 띄움
     if cards:
         card_mode.cards = cards
