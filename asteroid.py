@@ -1,8 +1,10 @@
 import math
 import random
 
+import effect
 import game_framework
 import game_world
+import sound
 from fragment import Fragment
 from sheet import get_sheet
 
@@ -17,6 +19,8 @@ class SmallAsteroid:
     fragments = 1
     heavy = False
     sheet_name = 'asteroid-small'
+    boom_name = 'explosion-small'
+    boom_sound = 'explode_small'
 
     def __init__(self, earth, moon, on_collect, x, y):
         self.earth, self.moon, self.on_collect = earth, moon, on_collect
@@ -65,6 +69,8 @@ class SmallAsteroid:
     def destroy(self):
         self.hp = 0
         game_world.remove_object(self)
+        effect.play(self.boom_name, self.x, self.y)
+        sound.play(self.boom_sound)
         # 부서진 자리에 경험치 파편을 떨어뜨림
         for _ in range(self.fragments):
             game_world.add_object(Fragment(self.x, self.y, self.moon, self.on_collect), game_world.PICKUP)
