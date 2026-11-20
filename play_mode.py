@@ -35,6 +35,7 @@ def init():
     game_world.add_object(moon, game_world.MOON)
     level, xp, pending = 1, 0, 0
     waves = Waves(earth, moon, gain_xp)
+    sound.music('battle')
     # 오른쪽 위 작은 스킬 팝업 그림 이름과 지난 시간
     popup = None
     boss_cut = False
@@ -121,8 +122,9 @@ def update():
     if waves.boss and not boss_cut:
         # 보스가 나오는 순간 한 번 보스 컷인
         boss_cut = True
-        # 화면 전체 컷인이라 제목은 소행성과 지구 사이에
-        cutin_mode.start('cutin-boss', '거대 소행성 접근', (242, 133, 74), None, 215, 1.85, 'boss_cutin')
+        # 화면 전체 컷인이라 제목은 소행성과 지구 사이에, 컷인 동안은 음악을 끄고 끝나면 보스 음악
+        sound.stop_music()
+        cutin_mode.start('cutin-boss', '거대 소행성 접근', (242, 133, 74), lambda: sound.music('boss'), 215, 1.85, 'boss_cutin')
     elif pending > 0:
         open_cards()
 
