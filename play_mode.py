@@ -10,7 +10,7 @@ from common import W, H
 from earth import Earth
 from moon import Moon
 from sheet import get_sheet
-from wave import Waves
+from wave import Waves, LAST
 
 def need(level):
     # 레벨 n에서 다음 레벨까지 파편 5n개
@@ -107,6 +107,21 @@ def draw_hud():
     bar(52, H - 33, 200, 14, earth.hp / earth.max_hp, (79, 176, 160))
     fit_icon('fragment', 30, 26, 18)
     bar(52, 21, 200, 10, xp / need(level), (232, 197, 71))
+    draw_wave()
+
+
+def draw_wave():
+    # 웨이브 칸, 지나간 칸은 채우고 지금 칸은 깜빡임
+    x0, y = 540, H - 26
+    for n in range(1, LAST):
+        l = x0 + (n - 1) * 20
+        if n < waves.number:
+            color = (232, 197, 71)
+        elif n == waves.number:
+            color = (243, 239, 228) if int(clock * 3) % 2 == 0 else (232, 197, 71)
+        else:
+            color = (40, 44, 80)
+        draw_rectangle(l, y - 6, l + 14, y + 6, *color, 255, True)
 
 
 def draw_world():
