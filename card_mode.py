@@ -4,6 +4,7 @@ import augment
 import common
 import game_framework
 import play_mode
+import skill_guide_mode
 import sound
 from common import W, H
 from gear import level_sheet
@@ -43,9 +44,16 @@ def pick(i):
     # 골랐으면 카드 모드를 닫고 True
     if not 0 <= i < len(cards):
         return False
-    augment.apply(play_mode.moon, cards[i])
+    moon = play_mode.moon
+    key = cards[i]
+    first = augment.is_skill(key) and augment.level_of(moon, key) == 0
+    augment.apply(moon, key)
     sound.play('card_pick')
     game_framework.pop_mode()
+    if first and len(moon.skills) == 1:
+        # 첫 스킬만 게임을 멈추고 Q를 한 번 눌러 보게 함
+        skill_guide_mode.new_skill = 0
+        game_framework.push_mode(skill_guide_mode)
     return True
 
 
