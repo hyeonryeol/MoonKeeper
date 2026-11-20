@@ -166,3 +166,62 @@ class EarthBoost(Skill):
                 if d > best_d:
                     best, best_d = (x, y), d
         return best
+
+
+class GravityBomb(Skill):
+    def cooldown(self):
+        return self.by_level([12, 10, 8])
+
+    def fire(self):
+        moon = self.moon
+        reach = self.by_level([120, 140, 160])
+        # 레벨이 오르면 3개, 5개, 이미 고른 폭탄 범위 밖에서 다음으로 많이 모인 곳을 차례로 고름
+        left = list(game_world.objects_at(game_world.ENEMY))
+        spots = []
+        for _ in range(self.by_level([1, 3, 5])):
+            x, y, best_n = None, None, 0
+            # 적 하나하나를 가운데로 놓아 보고 범위 안에 가장 많이 들어오는 곳
+            for a in left:
+                n = sum(1 for b in left if math.hypot(b.x - a.x, b.y - a.y) < reach)
+                if n > best_n:
+                    x, y, best_n = a.x, a.y, n
+            if x is None:
+                break
+            spots.append((x, y))
+            left = [b for b in left if math.hypot(b.x - x, b.y - y) >= reach]
+        # 적이 하나도 없으면 달 자리에 하나
+        for x, y in spots or [(moon.x, moon.y)]:
+            game_world.add_object(GravityWell(x, y, reach), game_world.EFFECT)
+
+
+class GravityWell:
+    pull = 110
+    damage = 2
+
+    def __init__(self, x, y, reach):
+        self.sheet = get_sheet('gravity-bomb')
+        self.x, self.y = x, y
+        self.reach = reach
+        self.t = 0.0
+
+    def update(self):
+        dt = game_framework.frame_time
+        self.t += dt
+        if self.t >= self.sheet.duration():
+            # 다 모은 뒤 가운데에서 터짐
+            for a in game_world.objects_at(game_world.ENEMY)[:]:
+                if math.hypot(a.x - self.x, a.y - self.y) < 40:
+                    a.hit(self.damage)
+            game_world.remove_object(self)
+            return
+        for a in game_world.objects_at(game_world.ENEMY):
+            dx, dy = self.x - a.x, self.y - a.y
+            d = math.hypot(dx, dy)
+            if 2 < d < self.reach:
+                step = min(d, self.pull * dt)
+                a.x += dx / d * step
+                a.y += dy / d * step
+
+    def draw(self):
+        # 그림은 반지름 48 기준이라 범위에 맞춰 키움
+        self.sheet.draw(self.t, self.x, self.y, 0, self.reach / 48)

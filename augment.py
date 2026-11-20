@@ -1,7 +1,7 @@
 import random
 
 from gear import Gear, LaserTurret, MissilePod, Drone, Coil, Shield, Anchor
-from skill import PierceLaser, EarthBoost
+from skill import PierceLaser, EarthBoost, GravityBomb
 
 MAX_LEVEL = 3
 MAX_SKILLS = 3
@@ -21,6 +21,7 @@ AUGMENTS = {
     'thruster': dict(name='추진기', kind='방어', desc=['무게 영향', '절반'], sheet='gear-thruster', cls=Gear),
     'pierce': dict(name='관통 레이저', kind='스킬', desc=['적이 많은 쪽으로', '일직선 빔 피해 3', '재사용 8초'], sheet='laser-beam', cutin='cutin-laser-long', cls=PierceLaser),
     'boost': dict(name='지구 추진기', kind='스킬', desc=['지구가 소행성', '반대쪽으로 피함', '재사용 20초'], sheet='earth-thruster', cutin='cutin-earth-thruster-long', cls=EarthBoost),
+    'gbomb': dict(name='중력 폭탄', kind='스킬', desc=['적이 많은 곳에서', '모아서 터뜨림', '재사용 12초'], sheet='gravity-bomb', cutin='cutin-gravity-bomb-long', cls=GravityBomb),
 }
 
 # 같은 증강을 다시 고를 때 카드에 보여줄 강화 내용
@@ -35,6 +36,7 @@ UPGRADES = {
     'thruster': ['무게 영향 1/3', '무게 영향 1/4'],
     'pierce': [['3갈래 피해 4', '재사용 7초'], ['5갈래 피해 5', '재사용 6초']],
     'boost': [['두 배 멀리 피함', '재사용 17초'], ['소행성이 없는 곳으로', '재사용 14초']],
+    'gbomb': [['폭탄 3개 범위 140', '재사용 10초'], ['폭탄 5개 범위 160', '재사용 8초']],
 }
 
 KIND_COLOR = {'무기': (242, 133, 74), '방어': (95, 212, 224), '스킬': (232, 197, 71)}
