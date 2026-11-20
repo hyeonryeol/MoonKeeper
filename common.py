@@ -59,7 +59,6 @@ def draw_background():
     background.draw(W / 2, H / 2, W, H)
 
 
-
 def toggle_fullscreen():
     global fullscreen
     fullscreen = not fullscreen
@@ -72,6 +71,9 @@ def handle_common(event):
         game_framework.quit()
     elif event.type == SDL_KEYDOWN and event.key == SDLK_F11:
         toggle_fullscreen()
+    elif event.type == SDL_KEYDOWN and event.key == SDLK_m:
+        # 소리 켜고 끄기
+        sound.toggle()
     else:
         return False
     return True
