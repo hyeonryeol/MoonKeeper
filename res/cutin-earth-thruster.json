@@ -1,0 +1,303 @@
+{
+ "frames": [
+  {
+   "filename": "cutin-earth-thruster 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 150
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-earth-thruster 1",
+   "frame": {
+    "x": 400,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 150
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-earth-thruster 2",
+   "frame": {
+    "x": 800,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 150
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-earth-thruster 3",
+   "frame": {
+    "x": 0,
+    "y": 150,
+    "w": 400,
+    "h": 150
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 150
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-earth-thruster 4",
+   "frame": {
+    "x": 400,
+    "y": 150,
+    "w": 400,
+    "h": 150
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 150
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-earth-thruster 5",
+   "frame": {
+    "x": 800,
+    "y": 150,
+    "w": 400,
+    "h": 150
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 150
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-earth-thruster 6",
+   "frame": {
+    "x": 0,
+    "y": 300,
+    "w": 400,
+    "h": 150
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 150
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-earth-thruster 7",
+   "frame": {
+    "x": 400,
+    "y": 300,
+    "w": 400,
+    "h": 150
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 150
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-earth-thruster 8",
+   "frame": {
+    "x": 800,
+    "y": 300,
+    "w": 400,
+    "h": 150
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 150
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-earth-thruster 9",
+   "frame": {
+    "x": 0,
+    "y": 450,
+    "w": 400,
+    "h": 150
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 150
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-earth-thruster 10",
+   "frame": {
+    "x": 400,
+    "y": 450,
+    "w": 400,
+    "h": 150
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 150
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-earth-thruster 11",
+   "frame": {
+    "x": 800,
+    "y": 450,
+    "w": 400,
+    "h": 150
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 150
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 150
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "cutin-earth-thruster.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 1200,
+   "h": 600
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "cutin-earth-thruster",
+    "from": 0,
+    "to": 11,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/cutin-earth-thruster",
+   "name": "Cut-in: earth thruster",
+   "fps": 12,
+   "loop": false,
+   "frames": 12,
+   "frameSize": [
+    400,
+    150
+   ],
+   "pivot": [
+    0,
+    0
+   ],
+   "columns": 3
+  }
+ }
+}
