@@ -1,0 +1,853 @@
+{
+ "frames": [
+  {
+   "filename": "wave-7 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 1",
+   "frame": {
+    "x": 240,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 2",
+   "frame": {
+    "x": 480,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 3",
+   "frame": {
+    "x": 720,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 4",
+   "frame": {
+    "x": 0,
+    "y": 70,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 5",
+   "frame": {
+    "x": 240,
+    "y": 70,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 6",
+   "frame": {
+    "x": 480,
+    "y": 70,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 7",
+   "frame": {
+    "x": 720,
+    "y": 70,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 8",
+   "frame": {
+    "x": 0,
+    "y": 140,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 9",
+   "frame": {
+    "x": 240,
+    "y": 140,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 10",
+   "frame": {
+    "x": 480,
+    "y": 140,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 11",
+   "frame": {
+    "x": 720,
+    "y": 140,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 12",
+   "frame": {
+    "x": 0,
+    "y": 210,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 13",
+   "frame": {
+    "x": 240,
+    "y": 210,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 14",
+   "frame": {
+    "x": 480,
+    "y": 210,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 15",
+   "frame": {
+    "x": 720,
+    "y": 210,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 16",
+   "frame": {
+    "x": 0,
+    "y": 280,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 17",
+   "frame": {
+    "x": 240,
+    "y": 280,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 18",
+   "frame": {
+    "x": 480,
+    "y": 280,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 19",
+   "frame": {
+    "x": 720,
+    "y": 280,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 20",
+   "frame": {
+    "x": 0,
+    "y": 350,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 21",
+   "frame": {
+    "x": 240,
+    "y": 350,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 22",
+   "frame": {
+    "x": 480,
+    "y": 350,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 23",
+   "frame": {
+    "x": 720,
+    "y": 350,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 24",
+   "frame": {
+    "x": 0,
+    "y": 420,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 25",
+   "frame": {
+    "x": 240,
+    "y": 420,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 26",
+   "frame": {
+    "x": 480,
+    "y": 420,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 27",
+   "frame": {
+    "x": 720,
+    "y": 420,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 28",
+   "frame": {
+    "x": 0,
+    "y": 490,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 29",
+   "frame": {
+    "x": 240,
+    "y": 490,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 30",
+   "frame": {
+    "x": 480,
+    "y": 490,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 31",
+   "frame": {
+    "x": 720,
+    "y": 490,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 32",
+   "frame": {
+    "x": 0,
+    "y": 560,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 33",
+   "frame": {
+    "x": 240,
+    "y": 560,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 34",
+   "frame": {
+    "x": 480,
+    "y": 560,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 35",
+   "frame": {
+    "x": 720,
+    "y": 560,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  },
+  {
+   "filename": "wave-7 36",
+   "frame": {
+    "x": 0,
+    "y": 630,
+    "w": 240,
+    "h": 70
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 240,
+    "h": 70
+   },
+   "sourceSize": {
+    "w": 240,
+    "h": 70
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "wave-7.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 960,
+   "h": 700
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "wave-7",
+    "from": 0,
+    "to": 36,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/wave-7",
+   "name": "Wave 7 banner",
+   "fps": 12,
+   "loop": false,
+   "frames": 37,
+   "frameSize": [
+    240,
+    70
+   ],
+   "pivot": [
+    120,
+    35
+   ],
+   "columns": 4
+  }
+ }
+}
