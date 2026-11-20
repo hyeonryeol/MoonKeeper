@@ -1,0 +1,853 @@
+{
+ "frames": [
+  {
+   "filename": "cutin-boss 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 1",
+   "frame": {
+    "x": 400,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 2",
+   "frame": {
+    "x": 800,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 3",
+   "frame": {
+    "x": 1200,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 4",
+   "frame": {
+    "x": 1600,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 5",
+   "frame": {
+    "x": 2000,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 6",
+   "frame": {
+    "x": 0,
+    "y": 300,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 7",
+   "frame": {
+    "x": 400,
+    "y": 300,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 8",
+   "frame": {
+    "x": 800,
+    "y": 300,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 9",
+   "frame": {
+    "x": 1200,
+    "y": 300,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 10",
+   "frame": {
+    "x": 1600,
+    "y": 300,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 11",
+   "frame": {
+    "x": 2000,
+    "y": 300,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 12",
+   "frame": {
+    "x": 0,
+    "y": 600,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 13",
+   "frame": {
+    "x": 400,
+    "y": 600,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 14",
+   "frame": {
+    "x": 800,
+    "y": 600,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 15",
+   "frame": {
+    "x": 1200,
+    "y": 600,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 16",
+   "frame": {
+    "x": 1600,
+    "y": 600,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 17",
+   "frame": {
+    "x": 2000,
+    "y": 600,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 18",
+   "frame": {
+    "x": 0,
+    "y": 900,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 19",
+   "frame": {
+    "x": 400,
+    "y": 900,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 20",
+   "frame": {
+    "x": 800,
+    "y": 900,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 21",
+   "frame": {
+    "x": 1200,
+    "y": 900,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 22",
+   "frame": {
+    "x": 1600,
+    "y": 900,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 23",
+   "frame": {
+    "x": 2000,
+    "y": 900,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 24",
+   "frame": {
+    "x": 0,
+    "y": 1200,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 25",
+   "frame": {
+    "x": 400,
+    "y": 1200,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 26",
+   "frame": {
+    "x": 800,
+    "y": 1200,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 27",
+   "frame": {
+    "x": 1200,
+    "y": 1200,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 28",
+   "frame": {
+    "x": 1600,
+    "y": 1200,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 29",
+   "frame": {
+    "x": 2000,
+    "y": 1200,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 30",
+   "frame": {
+    "x": 0,
+    "y": 1500,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 31",
+   "frame": {
+    "x": 400,
+    "y": 1500,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 32",
+   "frame": {
+    "x": 800,
+    "y": 1500,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 33",
+   "frame": {
+    "x": 1200,
+    "y": 1500,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 34",
+   "frame": {
+    "x": 1600,
+    "y": 1500,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 35",
+   "frame": {
+    "x": 2000,
+    "y": 1500,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  },
+  {
+   "filename": "cutin-boss 36",
+   "frame": {
+    "x": 0,
+    "y": 1800,
+    "w": 400,
+    "h": 300
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 400,
+    "h": 300
+   },
+   "sourceSize": {
+    "w": 400,
+    "h": 300
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "cutin-boss.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 2400,
+   "h": 2100
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "cutin-boss",
+    "from": 0,
+    "to": 36,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/cutin-boss",
+   "name": "Cut-in: boss",
+   "fps": 12,
+   "loop": false,
+   "frames": 37,
+   "frameSize": [
+    400,
+    300
+   ],
+   "pivot": [
+    0,
+    0
+   ],
+   "columns": 6
+  }
+ }
+}
