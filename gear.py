@@ -3,6 +3,7 @@ import math
 import effect
 import game_framework
 import game_world
+import sound
 from bullet import Bullet, Missile
 from sheet import get_sheet
 
@@ -73,6 +74,7 @@ class Turret(Gear):
 
     def shoot(self, x, y, rad):
         game_world.add_object(Bullet(x, y, rad), game_world.SHOT)
+        sound.play('shot')
 
     def update(self):
         dt = game_framework.frame_time
