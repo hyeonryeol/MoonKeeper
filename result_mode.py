@@ -46,7 +46,7 @@ def handle_events():
         if event.key == SDLK_ESCAPE:
             game_framework.quit()
         elif event.key == SDLK_r:
-            play_mode.start()
+            play_mode.start(False)
             return
         elif event.key == SDLK_t:
             game_framework.change_mode(title_mode)

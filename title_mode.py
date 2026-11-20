@@ -37,7 +37,7 @@ def handle_events():
         if event.key == SDLK_ESCAPE:
             game_framework.quit()
         elif event.key in (SDLK_RETURN, SDLK_SPACE):
-            play_mode.start()
+            play_mode.start(True)
             return
 
 

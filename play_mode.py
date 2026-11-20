@@ -9,6 +9,7 @@ import common
 import cutin_mode
 import game_framework
 import game_world
+import guide_mode
 import panels
 import pause_mode
 import result_mode
@@ -30,9 +31,12 @@ SKILL_KEYS = {SDLK_q: 0, SDLK_w: 1, SDLK_e: 2}
 show_gears = False
 
 
-def start():
+def start(with_guide):
     # 다른 모드에서 플레이로 들어올 때, 선택 소리는 앞 모드가 끝난 뒤에 남
+    # 타이틀에서 들어올 때는 키와 화면 설명부터, R로 다시 할 때는 바로 게임
     game_framework.change_mode(sys.modules[__name__])
+    if with_guide:
+        game_framework.push_mode(guide_mode)
     sound.play('select')
 
 
