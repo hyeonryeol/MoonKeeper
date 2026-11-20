@@ -1,0 +1,215 @@
+{
+ "frames": [
+  {
+   "filename": "jump-shock 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 184
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 184
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 184
+   },
+   "duration": 83
+  },
+  {
+   "filename": "jump-shock 1",
+   "frame": {
+    "x": 184,
+    "y": 0,
+    "w": 184,
+    "h": 184
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 184
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 184
+   },
+   "duration": 83
+  },
+  {
+   "filename": "jump-shock 2",
+   "frame": {
+    "x": 368,
+    "y": 0,
+    "w": 184,
+    "h": 184
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 184
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 184
+   },
+   "duration": 83
+  },
+  {
+   "filename": "jump-shock 3",
+   "frame": {
+    "x": 0,
+    "y": 184,
+    "w": 184,
+    "h": 184
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 184
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 184
+   },
+   "duration": 83
+  },
+  {
+   "filename": "jump-shock 4",
+   "frame": {
+    "x": 184,
+    "y": 184,
+    "w": 184,
+    "h": 184
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 184
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 184
+   },
+   "duration": 83
+  },
+  {
+   "filename": "jump-shock 5",
+   "frame": {
+    "x": 368,
+    "y": 184,
+    "w": 184,
+    "h": 184
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 184
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 184
+   },
+   "duration": 83
+  },
+  {
+   "filename": "jump-shock 6",
+   "frame": {
+    "x": 0,
+    "y": 368,
+    "w": 184,
+    "h": 184
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 184
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 184
+   },
+   "duration": 83
+  },
+  {
+   "filename": "jump-shock 7",
+   "frame": {
+    "x": 184,
+    "y": 368,
+    "w": 184,
+    "h": 184
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 184,
+    "h": 184
+   },
+   "sourceSize": {
+    "w": 184,
+    "h": 184
+   },
+   "duration": 83
+  }
+ ],
+ "meta": {
+  "app": "https://github.com/patch-gg/pixelfx",
+  "version": "1",
+  "image": "jump-shock.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 552,
+   "h": 552
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "jump-shock",
+    "from": 0,
+    "to": 7,
+    "direction": "forward"
+   }
+  ],
+  "pixelfx": {
+   "id": "moonkeeper/jump-shock",
+   "name": "Orbit jump shockwave",
+   "fps": 12,
+   "loop": false,
+   "frames": 8,
+   "frameSize": [
+    184,
+    184
+   ],
+   "pivot": [
+    92,
+    92
+   ],
+   "columns": 3
+  }
+ }
+}
