@@ -41,7 +41,8 @@ python main.py
 |---|---|
 | 달, 지구, 소행성, 장비, 스킬 컷인 | AI 이미지 생성 |
 | 파편, 총알, 스킬 효과, 배경 | AI 이미지 생성 |
-| 효과음, 배경음 | AI 사운드 생성 |
-| 글꼴 | 무료 한글 글꼴 |
+| 효과음 | 파이썬 코드로 직접 합성, 소스는 `tools/sfx/make_sfx.py` |
+| 배경음 | Suno AI 음악 생성 |
+| 글꼴 | 갈무리 Galmuri14, Galmuri11 Bold, SIL Open Font License 1.1, 라이선스 전문은 `res/fonts/Galmuri-OFL.txt` |
 
-그림과 소리는 전부 AI 생성 툴로 직접 만들었다.
+그림은 pixelfx 코드와 AI 생성 툴로, 효과음은 코드로, 배경음은 AI 생성 툴로 직접 만들었다.
