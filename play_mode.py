@@ -1,3 +1,5 @@
+import sys
+
 from pico2d import *
 
 import augment
@@ -18,6 +20,12 @@ from wave import Waves, LAST, REST
 POPUP_X, POPUP_Y = 538, 562
 # 스킬은 얻은 순서대로 Q W E
 SKILL_KEYS = {SDLK_q: 0, SDLK_w: 1, SDLK_e: 2}
+
+
+def start():
+    # 다른 모드에서 플레이로 들어올 때, 선택 소리는 앞 모드가 끝난 뒤에 남
+    game_framework.change_mode(sys.modules[__name__])
+    sound.play('select')
 
 
 def need(level):
