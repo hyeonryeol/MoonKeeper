@@ -168,8 +168,9 @@ def draw_wave():
         fit_icon('asteroid-boss', 180, H - 59, 22)
         bar(200, H - 64, 400, 10, boss.hp / boss.max_hp, (242, 133, 74))
     # 웨이브 사이 쉬는 3초 동안 pixelfx로 그린 알림 글자
-    if waves.resting() and waves.number < LAST:
-        get_sheet('wave-%d' % waves.number).draw(REST - waves.timer, W / 2, H / 2 + 120, 0, 2)
+    if waves.resting():
+        name = 'boss-incoming' if waves.number == LAST else 'wave-%d' % waves.number
+        get_sheet(name).draw(REST - waves.timer, W / 2, H / 2 + 120, 0, 2)
 
 
 def draw_world():
