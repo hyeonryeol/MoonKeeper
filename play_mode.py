@@ -10,7 +10,7 @@ from common import W, H
 from earth import Earth
 from moon import Moon
 from sheet import get_sheet
-from wave import Waves, LAST
+from wave import Waves, LAST, REST
 
 def need(level):
     # 레벨 n에서 다음 레벨까지 파편 5n개
@@ -122,6 +122,9 @@ def draw_wave():
         else:
             color = (40, 44, 80)
         draw_rectangle(l, y - 6, l + 14, y + 6, *color, 255, True)
+    # 웨이브 사이 쉬는 3초 동안 pixelfx로 그린 알림 글자
+    if waves.resting() and waves.number < LAST:
+        get_sheet('wave-%d' % waves.number).draw(REST - waves.timer, W / 2, H / 2 + 120, 0, 2)
 
 
 def draw_world():
