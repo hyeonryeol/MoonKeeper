@@ -151,7 +151,7 @@ def draw_hud():
 
 
 def draw_wave():
-    # 웨이브 칸, 지나간 칸은 채우고 지금 칸은 깜빡임
+    # 웨이브 칸 10개, 지나간 칸은 채우고 지금 칸은 깜빡임, 마지막은 보스 그림
     x0, y = 540, H - 26
     for n in range(1, LAST):
         l = x0 + (n - 1) * 20
@@ -162,6 +162,11 @@ def draw_wave():
         else:
             color = (40, 44, 80)
         draw_rectangle(l, y - 6, l + 14, y + 6, *color, 255, True)
+    fit_icon('asteroid-boss', x0 + (LAST - 1) * 20 + 12, y, 30 if waves.number == LAST else 24)
+    boss = waves.boss
+    if waves.number == LAST and boss and boss.hp > 0:
+        fit_icon('asteroid-boss', 180, H - 59, 22)
+        bar(200, H - 64, 400, 10, boss.hp / boss.max_hp, (242, 133, 74))
     # 웨이브 사이 쉬는 3초 동안 pixelfx로 그린 알림 글자
     if waves.resting() and waves.number < LAST:
         get_sheet('wave-%d' % waves.number).draw(REST - waves.timer, W / 2, H / 2 + 120, 0, 2)
