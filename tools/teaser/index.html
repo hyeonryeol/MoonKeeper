@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>달지기 티저</title>
+<link rel="icon" href="data:,">
+<style>
+  @font-face { font-family: "Galmuri11"; font-weight: 700; src: url("/res/fonts/Galmuri11-Bold.ttf"); }
+  @font-face { font-family: "Galmuri14"; src: url("/res/fonts/Galmuri14.ttf"); }
+  html, body { margin: 0; background: #000; overflow: hidden; }
+  #stage { position: relative; width: 1280px; height: 720px; overflow: hidden; background: #000; }
+  canvas { position: absolute; left: 0; top: 0; }
+  .bar { position: absolute; left: 0; width: 1280px; height: 62px; background: #000; z-index: 5; }
+  #barTop { top: 0; } #barBottom { bottom: 0; }
+  #flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 8; }
+  #black { position: absolute; inset: 0; background: #000; opacity: 0; z-index: 9; }
+  .cap { position: absolute; left: 0; width: 1280px; text-align: center; color: #f3efe4; z-index: 6;
+         font-family: "Galmuri11"; font-weight: 700; opacity: 0;
+         text-shadow: 0 0 18px rgba(111, 240, 255, .55), 0 3px 0 #05081a, 0 0 6px #05081a, 0 0 2px #05081a; }
+  #cap1 { top: 500px; font-size: 44px; letter-spacing: 2px; }
+  #cap2 { top: 566px; font-size: 26px; font-family: "Galmuri14"; color: #c9cce0; text-shadow: 0 2px 0 #05081a; }
+  #year { top: 446px; font-size: 96px; letter-spacing: 10px; color: #f3efe4; }
+  /* 실제 게임 화면을 보여 주는 창 */
+  #panel { position: absolute; left: 76px; top: 84px; width: 736px; height: 552px; z-index: 4; opacity: 0;
+           border: 3px solid #6ff0ff; box-shadow: 0 0 36px rgba(111, 240, 255, .5), 0 0 0 1px #05081a inset;
+           transform-origin: 50% 50%; background: #05081a; }
+  #play { width: 736px; height: 552px; display: block; image-rendering: pixelated; }
+  #tag { position: absolute; left: 76px; top: 88px; z-index: 6; opacity: 0; transform: translateY(-34px);
+         font-family: "Galmuri14"; font-size: 18px; color: #6ff0ff; letter-spacing: 2px; }
+  #side { position: absolute; left: 846px; top: 190px; width: 372px; z-index: 6; opacity: 0; padding: 22px 20px 26px;
+          background: rgba(5, 8, 26, .72); border-left: 3px solid #e8c547; }
+  #sideNo { font-family: "Galmuri11"; font-weight: 700; font-size: 26px; color: #e8c547; letter-spacing: 3px; }
+  #sideTitle { font-family: "Galmuri11"; font-weight: 700; font-size: 46px; line-height: 62px; color: #f3efe4; margin-top: 12px;
+               text-shadow: 0 0 18px rgba(111, 240, 255, .45), 0 3px 0 #05081a; }
+  #sideText { font-family: "Galmuri14"; font-size: 22px; line-height: 36px; color: #c9cce0; margin-top: 22px; }
+  /* 로고는 게임의 도트 로고 시트를 그대로 키움 */
+  #logo { position: absolute; left: 50%; top: 205px; width: 220px; height: 110px; margin-left: -110px; z-index: 7; opacity: 0;
+          background-image: url("/res/title-logo.png"); image-rendering: pixelated; transform-origin: 50% 50%; }
+  #tagline { top: 480px; font-size: 38px; letter-spacing: 3px; z-index: 7; }
+  #credit { top: 548px; font-size: 22px; font-family: "Galmuri14"; color: #b4b9d4; z-index: 7; text-shadow: 0 2px 0 #05081a, 0 0 6px #05081a; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "/three/build/three.module.js", "three/addons/": "/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<div id="stage">
+  <div id="panel"><img id="play" alt=""></div>
+  <div id="tag">실제 게임 화면</div>
+  <div id="side"><div id="sideNo"></div><div id="sideTitle"></div><div id="sideText"></div></div>
+  <div class="cap" id="year"></div>
+  <div class="cap" id="cap1"></div>
+  <div class="cap" id="cap2"></div>
+  <div id="logo"></div>
+  <div class="cap" id="tagline">지구를 끝까지 지켜라</div>
+  <div class="cap" id="credit">2D 게임 프로그래밍 텀 프로젝트 · Python + pico2d</div>
+  <div class="bar" id="barTop"></div><div class="bar" id="barBottom"></div>
+  <div id="flash"></div><div id="black"></div>
+</div>
+<script type="module" src="/teaser.js"></script>
+</body>
+</html>

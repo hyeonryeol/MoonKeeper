@@ -1,0 +1,8 @@
+{
+  "name": "moonkeeper-teaser",
+  "private": true,
+  "type": "module",
+  "description": "달지기 티저 영상, three.js 장면을 한 프레임씩 찍어 mp4로 묶음",
+  "scripts": { "render": "node render.mjs" },
+  "dependencies": { "puppeteer-core": "^24.0.0", "three": "^0.170.0" }
+}
