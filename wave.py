@@ -24,6 +24,8 @@ LAST = len(WAVES) + 1
 REST = 3.0
 # 웨이브를 막아 내면 지구 HP 회복
 HEAL = 10
+# 7웨이브는 양쪽에서 동시에 공격
+TWO_SIDES = 7
 
 
 def duration(n):
@@ -56,6 +58,7 @@ class Spawn:
         # 웨이브 시간 동안 고르게 나눠서 나옴
         waves.gap = duration(waves.number) / len(waves.queue)
         waves.timer = 1.0
+        waves.side = random.uniform(0, math.tau)
 
     def do(self, waves):
         waves.timer -= game_framework.frame_time
@@ -93,6 +96,7 @@ class Waves:
         self.timer = 0.0
         self.queue = []
         self.gap = 0.0
+        self.side = 0.0
         self.states = {'REST': Rest(), 'SPAWN': Spawn(), 'CLEAR': Clear()}
         self.state = 'REST'
         self.states[self.state].enter(self)
@@ -106,12 +110,19 @@ class Waves:
                 return True
         return False
 
+    def angle(self):
+        if self.number == TWO_SIDES:
+            # 정반대 두 방향에서 번갈아 나옴
+            self.side += math.pi
+            return self.side + random.uniform(-0.4, 0.4)
+        return random.uniform(0, math.tau)
+
     def spawn_next(self):
         kind = self.queue.pop()
         if kind == 'cluster':
-            group = cluster_at_edge(self.earth, self.moon, self.on_collect, random.uniform(0, math.tau))
+            group = cluster_at_edge(self.earth, self.moon, self.on_collect, self.angle())
         else:
-            group = [kind.at_edge(self.earth, self.moon, self.on_collect, random.uniform(0, math.tau))]
+            group = [kind.at_edge(self.earth, self.moon, self.on_collect, self.angle())]
         game_world.add_objects(group, game_world.ENEMY)
 
     def update(self):
