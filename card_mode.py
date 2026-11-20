@@ -70,7 +70,7 @@ def update():
 
 
 def draw_cards():
-    font, big_font, moon = common.font, common.big_font, play_mode.moon
+    font, big_font, moon, clock = common.font, common.big_font, play_mode.moon, play_mode.clock
     draw_rectangle(0, 0, W, H, 7, 11, 31, 170, True)
     big_font.draw(W / 2 - 70, 500, '레벨 업!', (232, 197, 71))
     font.draw(W / 2 - 120, 460, '1 2 3 키나 클릭으로 하나 고르기', (201, 204, 224))
@@ -85,7 +85,7 @@ def draw_cards():
         lv = augment.level_of(moon, key)
         # 강화 카드에는 다음 레벨 모습을 보여줌, 방패 고리는 그림이 커서 1배
         if augment.is_skill(key):
-            play_mode.fit_icon(data['sheet'], cx, CARD_Y + 45, 110)
+            play_mode.fit_icon(data['sheet'], cx, CARD_Y + 45, 110, augment.icon_time(key, clock))
         else:
             play_mode.draw_icon(level_sheet(data['sheet'], lv + 1), cx, CARD_Y + 45, 1 if key == 'shield' else 4)
         font.draw(l + 14, CARD_Y - 20, data['name'], (243, 239, 228))

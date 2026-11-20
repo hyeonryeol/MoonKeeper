@@ -107,16 +107,16 @@ def bar(x, y, w, h, k, color):
     draw_rectangle(x, y, x + w, y + h, 201, 204, 224)
 
 
-def fit_icon(name, x, y, size):
+def fit_icon(name, x, y, size, t=None):
     # 그림의 긴 쪽이 size가 되게 줄여서 그림
     s = get_sheet(name)
-    draw_icon(name, x, y, size / max(s.w, s.h))
+    draw_icon(name, x, y, size / max(s.w, s.h), t)
 
 
-def draw_icon(name, x, y, scale):
+def draw_icon(name, x, y, scale, t=None):
     s = get_sheet(name)
-    # 피벗 말고 그림 가운데가 x y에 오게 그림
-    s.draw(clock % s.duration(), x - (s.w / 2 - s.px) * scale, y - (s.py - s.h / 2) * scale, 0, scale)
+    # 피벗 말고 그림 가운데가 x y에 오게 그림, 한 번만 도는 그림도 아이콘에서는 반복
+    s.draw((clock if t is None else t) % s.duration(), x - (s.w / 2 - s.px) * scale, y - (s.py - s.h / 2) * scale, 0, scale)
 
 
 def draw_hud():
