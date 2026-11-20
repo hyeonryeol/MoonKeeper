@@ -2,6 +2,7 @@ from pico2d import *
 
 import common
 import game_framework
+import intro_mode
 import play_mode
 import sound
 import title
@@ -37,7 +38,11 @@ def handle_events():
         if event.key == SDLK_ESCAPE:
             game_framework.quit()
         elif event.key in (SDLK_RETURN, SDLK_SPACE):
-            play_mode.start(True)
+            # 시작 이야기는 게임을 켜고 처음 한 번만
+            if intro_mode.seen:
+                play_mode.start(True)
+            else:
+                game_framework.change_mode(intro_mode)
             return
 
 
