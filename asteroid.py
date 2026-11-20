@@ -9,6 +9,8 @@ from fragment import Fragment
 from sheet import get_sheet
 
 SPAWN_DISTANCE = 470
+# 결과 화면에 쓰는 부순 소행성 수
+destroyed = 0
 
 
 class SmallAsteroid:
@@ -21,6 +23,7 @@ class SmallAsteroid:
     sheet_name = 'asteroid-small'
     boom_name = 'explosion-small'
     boom_sound = 'explode_small'
+    hit_sound = None
 
     def __init__(self, earth, moon, on_collect, x, y):
         self.earth, self.moon, self.on_collect = earth, moon, on_collect
@@ -66,8 +69,12 @@ class SmallAsteroid:
         self.hp -= damage
         if self.hp <= 0:
             self.destroy()
+        elif self.hit_sound:
+            sound.play(self.hit_sound)
 
     def destroy(self):
+        global destroyed
+        destroyed += 1
         self.hp = 0
         game_world.remove_object(self)
         effect.play(self.boom_name, self.x, self.y)
@@ -163,3 +170,38 @@ class Comet(SmallAsteroid):
 
     def draw(self):
         self.sheet.draw(self.t, self.x, self.y, self.rad)
+
+
+class Boss(MediumAsteroid):
+    # 지구의 두 배 크기
+    radius = 80
+    speed = 20
+    max_hp = 160
+    # 지구에 닿으면 HP 전부를 깎아 바로 게임 오버
+    damage = 100
+    fragments = 30
+    sheet_name = 'asteroid-boss'
+    boom_sound = 'boss_explode'
+    hit_sound = 'boss_hit'
+    # 10초마다 작은 소행성 4개를 뿌림
+    throw_gap = 10.0
+
+    def __init__(self, earth, moon, on_collect, x, y):
+        super().__init__(earth, moon, on_collect, x, y)
+        self.throw = self.throw_gap
+
+    def update(self):
+        dt = game_framework.frame_time
+        super().update()
+        self.throw -= dt
+        if self.throw <= 0 and self.hp > 0:
+            self.throw = self.throw_gap
+            for i in range(4):
+                a = i * math.tau / 4 + random.uniform(-0.3, 0.3)
+                game_world.add_object(SmallAsteroid(self.earth, self.moon, self.on_collect,
+                                                    self.x + math.cos(a) * (self.radius + 6), self.y + math.sin(a) * (self.radius + 6)),
+                                      game_world.ENEMY)
+
+    def destroy(self):
+        # 보스는 갈라지지 않음
+        SmallAsteroid.destroy(self)
