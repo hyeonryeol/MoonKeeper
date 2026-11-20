@@ -126,6 +126,7 @@ class MissilePod(Gear):
         for i in range(count):
             spread = (i - (count - 1) / 2) * 0.5
             game_world.add_object(Missile(x, y, a + spread), game_world.SHOT)
+        sound.play('missile')
         self.cool = 4.0
 
 
